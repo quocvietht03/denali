@@ -1,0 +1,178 @@
+.bt-site-footer {
+  color: #ffffff;
+  background: $color-secondary;
+  padding: 30px 0;
+  .bt-copyright a {
+    color: $color-accent;
+  }
+}
+
+.elementor-element {
+  &.bt-gallery-footer-main {
+    .elementor-gallery-item {
+      .elementor-gallery-item__overlay {
+        border-radius: 20px;
+      }
+      &:nth-child(5n + 1) {
+        border-bottom-left-radius: 50%;
+        .elementor-gallery-item__overlay {
+          border-bottom-left-radius: 50%;
+        }
+      }
+      &:nth-child(5n + 2) {
+        border-top-left-radius: 50%;
+        .elementor-gallery-item__overlay {
+          border-top-left-radius: 50%;
+        }
+      }
+      &:nth-child(5n + 3) {
+        border-top-right-radius: 50%;
+        .elementor-gallery-item__overlay {
+          border-top-right-radius: 50%;
+        }
+      }
+      &:nth-child(5n + 4) {
+        border-top-left-radius: 50%;
+        .elementor-gallery-item__overlay {
+          border-top-left-radius: 50%;
+        }
+      }
+      &:nth-child(5n + 5) {
+        border-bottom-right-radius: 50%;
+        .elementor-gallery-item__overlay {
+          border-bottom-right-radius: 50%;
+        }
+      }
+    }
+  }
+  &.bt-site-footer-main {
+    > .e-con-inner {
+      > .elementor-element {
+        &:not(:last-child) {
+          &::after {
+            @media (min-width: $break-tl) {
+              content: "";
+              display: block;
+              position: absolute;
+              right: 0;
+              top: 63px;
+              height: 173px;
+              border-right: 1px dashed #8a8a8a;
+            }
+          }
+        }
+        &:not(:first-child) {
+          @media (max-width: 1250px) and (min-width: $break-tl) {
+            padding-left: 15px;
+          }
+        }
+        @media (max-width: 1095px) and (min-width: $break-tl) {
+          &:first-child {
+            width: 30%;
+          }
+          &:nth-child(2) {
+            width: 45%;
+          }
+        }
+        .bt-elwg-site-infor {
+          &.bt-elwg-site-infor {
+            &--style-1 {
+              @media (max-width: 1290px) and (min-width: $break-tl) {
+                grid-gap: 15px;
+              }
+              @media (max-width: $break-xs) {
+                grid-gap: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.bt-site-footer-style1 {
+    > .e-con-inner {
+      > .elementor-element {
+        > .elementor-element {
+          &:first-child {
+            .bt-elwg-site-social {
+              .bt-google {
+                border: 1px solid #c6c6c6;
+              }
+            }
+          }
+          @media (max-width: $break-lg) and (min-width: $break-tl) {
+            &:first-child {
+              .elementor-element {
+                &:nth-child(2) {
+                  > .elementor-widget-container {
+                    margin-bottom: 20px;
+                  }
+                }
+              }
+            }
+            &:last-child {
+              width: 30%;
+              padding-left: 15px;
+            }
+            &:nth-child(2) {
+              width: 21%;
+            }
+          }
+        }
+        .tnp-subscription-minimal {
+          .tnp-privacy-field {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &.bt-site-footer-style2 {
+    > .elementor-element {
+      @media (max-width: $break-lg) and (min-width: $break-tl) {
+        &:first-child {
+          width: 24%;
+        }
+        &:nth-child(2) {
+          width: 21%;
+        }
+        &:nth-child(3) {
+          .bt-time--hours {
+            max-width: 170px;
+          }
+        }
+        &:last-child {
+          padding-left: 15px;
+        }
+      }
+      .bt-elwg-time-list--default {
+        .bt-time--item {
+          &::not(:last-child) {
+            padding-bottom: 22px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(69, 77, 95, 1);
+          }
+        }
+      }
+      .tnp-subscription-minimal {
+        .tnp-privacy-field {
+          display: none;
+        }
+      }
+    }
+  }
+  &.bt-copyright-footer-style2 {
+    > .e-con-inner {
+      > .elementor-element {
+        &:last-child {
+          @media (max-width: 1100px) and (min-width: $break-tl) {
+            column-gap: 40px;
+            .elementor-icon-list-item > a {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

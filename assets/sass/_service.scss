@@ -1,0 +1,530 @@
+.__bt-service-style-default {
+  .bt-post {
+    &:hover {
+      .bt-post {
+        &--title {
+          a {
+            color: inherit;
+          }
+        }
+      }
+    }
+    &--featured {
+      .bt-cover-image {
+        min-height: 314px;
+        border-radius: 20px 20px 80px 20px;
+        box-sizing: border-box;
+        @media (max-width: $break-lg) and (min-width: $break-tl) {
+          min-height: 240px;
+        }
+      }
+    }
+
+    &--infor {
+      position: relative;
+      margin-left: 13px;
+      margin-right: 13px;
+      margin-top: -68px;
+    }
+    &--content {
+      padding: 30px 30px 22px;
+      background: #f7f4ef;
+      border-radius: 20px 20px 0px 0px;
+      @media (max-width: 1100px) and (min-width: $break-tl) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @media (max-width: 400px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    &--price {
+      position: absolute;
+      right: 0;
+      top: -19px;
+      background: $color-accent;
+      color: #fff;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding: 7px 14px 7px 11px;
+      &::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 23px solid $color-accent;
+        border-left: 19px solid transparent;
+        position: absolute;
+        left: -18px;
+        top: 0;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 23px solid $color-accent;
+        border-left: 19px solid transparent;
+        position: absolute;
+        left: -18px;
+        bottom: 0;
+      }
+    }
+    &--title {
+      color: $color-primary;
+      font-family: $secondary-font;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 7px;
+      a {
+        color: $color-primary;
+      }
+    }
+    &--description {
+      color: $color-accent;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &--button-booknow {
+      display: flex;
+      a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        background: $color-accent;
+        width: 100%;
+        display: block;
+        padding: 14px 15px;
+        border-radius: 0 0 20px 20px;
+      }
+    }
+  }
+}
+
+.post-type-archive-service {
+  .bt-grid-post {
+    @extend .__bt-service-style-default;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    .bt-post {
+      width: calc(25% - 22.5px);
+      @media (max-width: $break-tl) {
+        width: calc(50% - 15px);
+      }
+      @media (max-width: $break-sm) {
+        width: 100%;
+      }
+    }
+  }
+}
+.tax-service_categories {
+  .bt-grid-post {
+    @extend .__bt-service-style-default;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    .bt-post {
+      width: calc(25% - 22.5px);
+      @media (max-width: $break-tl) {
+        width: calc(50% - 15px);
+      }
+      @media (max-width: $break-sm) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.single-service {
+  .bt-main-content-ss {
+    @media (max-width: $break-md) {
+      .bt-main-post-row {
+        flex-direction: column-reverse;
+      }
+    }
+    .bt-post {
+      &--thumbnail {
+        .bt-cover-image {
+          padding-bottom: 54%;
+          border-radius: 20px 20px 80px 20px;
+          @media (max-width: 600px) {
+            padding-bottom: 75%;
+            border-radius: 20px 20px 0 0;
+          }
+        }
+      }
+      &--infor {
+        position: relative;
+        max-width: 600px;
+        margin: -95px 50px 50px 50px;
+        @media (max-width: 600px) {
+          margin: 0 0 30px;
+        }
+      }
+      &--info {
+        padding: 38px 47px 28px;
+        background: #f7f4ef;
+        border-radius: 20px 0 0 0;
+        @media (max-width: 1100px) and (min-width: $break-tl) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        @media (max-width: 600px) {
+          border-radius: 0;
+        }
+        @media (max-width: 400px) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+      &--price {
+        position: absolute;
+        right: 0;
+        top: -19px;
+        background: $color-accent;
+        color: #fff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 7px 14px 8px 11px;
+        border-radius: 0 10px 0 0;
+        @media (max-width: 600px) {
+          border-radius: 0;
+        }
+        &::before {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 23px solid $color-accent;
+          border-left: 19px solid transparent;
+          position: absolute;
+          left: -18px;
+          top: 0;
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-bottom: 23px solid $color-accent;
+          border-left: 19px solid transparent;
+          position: absolute;
+          left: -18px;
+          bottom: 0;
+        }
+      }
+      &--title {
+        color: $color-primary;
+        font-family: $secondary-font;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0 0 2px 0;
+        a {
+          color: $color-primary;
+        }
+        @media (max-width: $break-xs) {
+          font-size: 30px;
+        }
+      }
+      &--description {
+        color: $color-accent;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      &--button-booknow {
+        a {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-align: center;
+          background: $color-accent;
+          display: block;
+          padding: 14px 15px;
+          border-radius: 0 0 20px 20px;
+        }
+      }
+      &--content {
+        @extend .__bt-format-post-content;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        a {
+          text-decoration: underline;
+        }
+        .page-links {
+          margin-top: 40px;
+        }
+        h2 {
+          font-size: 36px;
+        }
+        h3 {
+          font-size: 26px;
+        }
+        ul {
+          padding-left: 21px;
+          &.bt-list-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0 20px;
+            @media (max-width: 600px) {
+              grid-template-columns: 1fr;
+            }
+          }
+        }
+        .wp-block-image {
+          img {
+            border-radius: 20px 20px 20px 80px;
+          }
+        }
+        .wp-block-columns {
+          .wp-block-column {
+            > *:first-child {
+              margin-top: 0;
+            }
+            > *:last-child {
+              margin-bottom: 0;
+            }
+            &:last-child {
+              .wp-block-image {
+                img {
+                  border-radius: 20px 80px 20px 20px;
+                }
+              }
+            }
+          }
+        }
+        @media (max-width: 600px) {
+          .wp-block-image {
+            img {
+              border-radius: 10px 10px 40px 10px !important;
+            }
+          }
+        }
+      }
+    }
+    .bt-sidebar-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .bt-sidebar-block {
+        .bt-block-heading {
+          color: #fff;
+          font-family: $secondary-font;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 600;
+          letter-spacing: 0.2px;
+          background: $color-accent;
+          padding: 20px 40px;
+          margin: 0;
+          border-radius: 20px 20px 0 0;
+          @media (max-width: $break-lg) and (min-width: $break-md) {
+            padding: 15px 30px;
+            border-radius: 10px 10px 0 0;
+          }
+          @media (max-width: $break-xs) {
+            padding: 15px 30px;
+            border-radius: 10px 10px 0 0;
+          }
+        }
+        .bt-service-list {
+          background: #f7f4ef;
+          padding: 31px 23px 40px 25px;
+          list-style: none;
+          margin: 0;
+          border-radius: 0 0 80px 20px;
+          @media (max-width: $break-lg) and (min-width: $break-md) {
+            padding: 20px 20px 25px 20px;
+            border-radius: 0 0 40px 10px;
+          }
+          @media (max-width: $break-xs) {
+            padding: 20px 20px 25px 20px;
+            border-radius: 0 0 40px 10px;
+          }
+          &--item {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 15px;
+            transition: all 0.5s ease-in-out;
+            border-radius: 20px;
+            @media (max-width: $break-lg) and (min-width: $break-md) {
+              border-radius: 15px;
+            }
+            &:hover,
+            &.active {
+              background: #fff;
+              padding-left: 30px;
+            }
+          }
+          &--icon {
+            width: 20px;
+            display: flex;
+          }
+          &--content {
+            width: calc(100% - 28px);
+            .bt-post--title {
+              margin: 0;
+              color: $color-primary;
+              font-family: $secondary-font;
+              font-size: 22px;
+              font-weight: 500;
+            }
+          }
+        }
+        &.bt-make-appointment-block {
+          @extend .__make-appointment-style;
+          background-image: url("../images/bg-appoinment-form-widget.png");
+        }
+        &.bt-opening-hours-block {
+          background-image: url("../images/bg-opening-hours-sidebar-min.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 57px 52px 59px 56px;
+          box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
+          border-radius: 20px 20px 80px 20px;
+          @media (max-width: $break-lg) and (min-width: $break-md) {
+            padding: 30px 15px;
+            border-radius: 10px 10px 40px 10px;
+          }
+          @media (max-width: $break-xs) {
+            padding: 30px 15px;
+            border-radius: 10px 10px 40px 10px;
+          }
+          .bt-opening-hours {
+            > svg {
+              display: block;
+            }
+            &--sub-head {
+              color: #fff;
+              font-size: 15px;
+              font-weight: 500;
+              background: $color-accent;
+              padding: 6px 18px;
+              margin-top: 12px;
+              display: inline-block;
+              line-height: 1.33;
+              border-radius: 5px;
+            }
+            &--head {
+              color: $color-primary;
+              font-family: $secondary-font;
+              font-size: 40px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              text-transform: capitalize;
+              margin: 11px 0 7px 0;
+              span {
+                font-family: $accent-font;
+                color: $color-accent;
+              }
+            }
+            &--desc {
+              color: $color-text;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 26px;
+            }
+            &--time-list {
+              margin: 27px 0 30px 0;
+              list-style: none;
+              padding: 0;
+            }
+            &--time-item {
+              display: flex;
+              column-gap: 15px;
+              flex-direction: column;
+              &:not(:last-child) {
+                padding-bottom: 14px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #c2c2c2;
+              }
+              .bt-label {
+                color: $color-accent;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+              }
+              .bt-hours {
+                color: $color-text;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                font-family: $accent-font;
+              }
+            }
+            &--phone {
+              background: #fff;
+              padding: 30px;
+              border-radius: 15px;
+              box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
+              @media (max-width: $break-lg) and (min-width: $break-md) {
+                padding: 15px;
+              }
+              @media (max-width: $break-xs) {
+                padding: 15px;
+              }
+              > a {
+                display: flex;
+                align-items: center;
+              }
+              &-icon {
+                width: 52px;
+                svg {
+                  width: 100%;
+                  display: block;
+                }
+              }
+              &-infor {
+                width: calc(100% - 52px);
+                padding-left: 18px;
+                .bt-label {
+                  color: $color-accent;
+                  font-size: 18px;
+                  font-weight: 500;
+                  text-transform: capitalize;
+                  margin: 0 0 8px 0;
+                  line-height: normal;
+                  @media (max-width: $break-lg) and (min-width: $break-md) {
+                    font-size: 16px;
+                    margin: 0 0 4px 0;
+                  }
+                  @media (max-width: $break-xs) {
+                    font-size: 16px;
+                    margin: 0 0 4px 0;
+                  }
+                }
+                .bt-head {
+                  color: $color-primary;
+                  font-size: 26px;
+                  font-weight: 700;
+                  @media (max-width: $break-lg) and (min-width: $break-md) {
+                    font-size: 21px;
+                  }
+                  @media (max-width: $break-xs) {
+                    font-size: 24px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
