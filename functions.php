@@ -28,8 +28,8 @@ if (!function_exists('denali_fonts_url')) {
 	function denali_fonts_url()
 	{
 		global $denali_options;
-		$base_font = 'Cormorant';
-		$head_font = 'DM Sans';
+		$base_font = 'Halant';
+		$head_font = 'Cabin';
 		$spec_font = 'Dancing Script';
 
 		$font_url = '';
