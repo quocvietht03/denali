@@ -70,12 +70,13 @@ class ElementorWidgets
 			'product-loop-item',
 			'highlighted-heading',
 			'popular-services',
+			'popular-service-style-1',
+			'popular-services-style-2',
 			'pricing-item',
 			'pricing-item-style-1',
 			'time-list',
 			'therapist-loop-item',
-			'services-list',
-			'popular-service-style-1',
+			'services-list', 
 			'service-loop-item',
 			'page-title-bar',
 			'site-box-phone',
@@ -191,6 +192,7 @@ class ElementorWidgets
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PopularServices\Widget_PopularServices());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PopularServicesStyle1\Widget_PopularServicesStyle1());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PopularServicesStyle2\Widget_PopularServicesStyle2());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ServicesList\Widget_ServicesList());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ServiceLoopItem\Widget_ServiceLoopItem());
 

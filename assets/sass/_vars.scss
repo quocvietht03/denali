@@ -1,16 +1,16 @@
 /*
  * Fonts
  */
-$text-font: var(--e-global-typography-text-font-family, "DM Sans");
-$primary-font: var(--e-global-typography-primary-font-family, "DM Sans");
-$secondary-font: var(--e-global-typography-secondary-font-family, "Cormorant");
+$text-font: var(--e-global-typography-text-font-family, "Cabin");
+$primary-font: var(--e-global-typography-primary-font-family, "Cabin");
+$secondary-font: var(--e-global-typography-secondary-font-family, "Halant");
 $accent-font: var(--e-global-typography-accent-font-family, "Dancing Script");
 /*
  * colors
  */
 $color-text: var(--e-global-color-text, #555);
 $color-primary: var(--e-global-color-primary, #222);
-$color-accent: var(--e-global-color-accent, #c2a74e);
+$color-accent: var(--e-global-color-accent, #698F65);
 $color-secondary: var(--e-global-color-secondary, #111);
 
 /* Layout */

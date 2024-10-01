@@ -56,6 +56,8 @@
         a {
             color: $color-accent;
             text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 1px;
         }
     }
     &.bt-section-hero-home1 {
@@ -1169,6 +1171,25 @@
                     border-bottom-left-radius: 50px;
                     .elementor-gallery-item__overlay {
                         border-bottom-left-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+    &.bt-section-popular-home4 {
+        > .e-con-inner {
+            > .elementor-element {
+                &:first-child {
+                    .elementor-button-wrapper {
+                        .elementor-button {
+                            text-underline-offset: 2px;
+                            text-decoration-thickness: 1px;
+                            .elementor-button-icon {
+                                svg {
+                                    fill: $color-accent;
+                                }
+                            }
+                        }
                     }
                 }
             }

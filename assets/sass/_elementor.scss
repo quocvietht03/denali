@@ -159,12 +159,13 @@
 .bt-elwg-site-infor {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 50px;
+  gap: 4px 40px;
 
   &--item {
     font-family: $primary-font;
-    font-size: 16px;
-    line-height: 150%;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
     color: $color-primary;
 
     a {
@@ -1474,6 +1475,118 @@
           &:hover {
             color: $color-accent;
           }
+        }
+      }
+    }
+  }
+  &--style2 {
+    .bt-service-popular {
+      display: grid;
+      grid-gap: 25px;
+      grid-template-columns: repeat(5, 1fr);
+      &.columns-5 {
+        @media (max-width: $break-lg) and (min-width: $break-sm) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: $break-sm) {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 10px;
+        }
+        @media (max-width: $break-xs) {
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 20px;
+        }
+      }
+      &.columns-4 {
+        grid-template-columns: repeat(4, 1fr);
+        @media (max-width: $break-tl) and (min-width: $break-sm) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: $break-sm) {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 10px;
+        }
+        @media (max-width: $break-xs) {
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 20px;
+        }
+      }
+      &.columns-3 {
+        grid-template-columns: repeat(3, 1fr);
+        @media (max-width: $break-sm) {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 10px;
+        }
+        @media (max-width: $break-xs) {
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 20px;
+        }
+      }
+    }
+    .bt-post {
+     
+      &--inner {
+        position: relative;
+      }
+      &--content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.6s ease;
+        padding: 15px;
+        border-radius: 20px 20px 20px 50px;
+        flex-direction: column;
+        gap: 21px;
+      }
+      &--icon{
+        svg{
+          width: 74px;
+        }
+      }
+      &--featured {
+        .bt-cover-image {
+          min-height: 348px;
+          border-radius: 20px 20px 20px 50px;
+        }
+      }
+      &--title {
+        color: #fff;
+        text-align: center;
+        font-family: $secondary-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        max-width: 184px;
+        @media (max-width: $break-lg) and (min-width: $break-tl) {
+          font-size: 20px;
+          line-height: normal;
+          max-width: 175px;
+        }
+        @media (max-width: $break-xs) {
+          font-size: 20px;
+          max-width: 175px;
+          line-height: normal;
+        }
+        a {
+          color: #fff;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+      &:hover {
+        .bt-post--content {
+          background: rgba(112, 142, 134, 0.7) !important;
         }
       }
     }
