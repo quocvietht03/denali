@@ -341,9 +341,20 @@ class Widget_PopularServicesStyle2 extends Widget_Base
 			[
 				'label' => __('Background', 'denali'),
 				'type' => Controls_Manager::COLOR,
-				'default' => 'rgba(24, 29, 41, 0.5)',
+				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .bt-post--content' => 'background: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_control(
+			'background_overlay_color_hover',
+			[
+				'label' => __('Background Hover', 'denali'),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-post:hover .bt-post--content' => 'background: {{VALUE}};',
 				],
 			]
 		);
@@ -357,7 +368,33 @@ class Widget_PopularServicesStyle2 extends Widget_Base
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
-
+		$this->add_control(
+			'icon_style',
+			[
+				'label' => __('Icon', 'denali'),
+				'type' => Controls_Manager::HEADING,
+			]
+		);
+		$this->add_responsive_control(
+			'icon_size',
+			[
+				'label' => __('Icon Size', 'denali'),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 74,
+				],
+				'range' => [
+					'px' => [
+						'min' => 20,
+						'max' => 100,
+						'step' => 1,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .bt-post--icon svg' => 'width: {{SIZE}}px;',
+				],
+			]
+		);
 		$this->add_control(
 			'title_style',
 			[

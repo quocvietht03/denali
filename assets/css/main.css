@@ -9355,7 +9355,7 @@ body {
   color: #fff;
 }
 .bt-elwg-service-popular--style2 .bt-post:hover .bt-post--content {
-  background: rgba(112, 142, 134, 0.7) !important;
+  background: rgba(112, 142, 134, 0.7);
 }
 
 .bt-elwg-pricing-item--default .bt-pricing--featured {
