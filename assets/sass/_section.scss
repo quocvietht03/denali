@@ -392,13 +392,16 @@
             @media (max-width: $break-lg) and (min-width: $break-tl) {
                 padding-left: 15px;
             }
-            @media (max-width: $break-xs) {
-                padding-left: 15px;
-            }
         }
         .bt-col-background-banner {
             @media (max-width: $break-xs) {
                 background-position: 34% 0 !important;
+            }
+            .elementor-widget-button {
+                .elementor-button {
+                    text-underline-offset: 2px;
+                    text-decoration-thickness: 1px;
+                }
             }
         }
     }
@@ -1191,6 +1194,215 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    &.bt-section-about-home4 {
+        @media (max-width: 1350px) and (min-width: $break-tl) {
+            > .e-con-inner {
+                grid-column-gap: 30px;
+                .elementor-element {
+                    &:first-child {
+                        .elementor-element {
+                            &:nth-child(2) {
+                                img {
+                                    max-width: 180px;
+                                }
+                            }
+                            &:last-child {
+                                bottom: 40%;
+                                .elementor-counter-title {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bt-col-button-author {
+                margin-top: 25px;
+                > .e-con-inner {
+                    gap: 15px;
+                }
+                .elementor-button-wrapper {
+                    .elementor-button {
+                        padding: 18px 28px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        @media (max-width: $break-lg) and (min-width: $break-tl) {
+            .bt-elwg-highlighted-heading {
+                h3 {
+                    font-size: 43px !important;
+                    line-height: 53px !important;
+                }
+            }
+            > .e-con-inner {
+                .elementor-element {
+                    &:first-child {
+                        .elementor-element {
+                            &:nth-child(2){
+                                left: 0;
+                            }
+                            &:last-child {
+                                bottom: 40%;
+                                left: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: $break-tl) and (min-width: 940px) {
+            > .e-con-inner {
+                .elementor-element {
+                    &:first-child {
+                        .elementor-element {
+                            &:nth-child(2){
+                                left: 8%;
+                            }
+                            &:last-child {
+                                left: 14%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: $break-xs) {
+            > .e-con-inner {
+                .elementor-element {
+                    &:first-child {
+                        .elementor-element {
+                            &:nth-child(2) {
+                                left: 10px;
+                                right: auto;
+                            }
+                            &:last-child {
+                                left: 0;
+                                right: auto;
+                                top: -40px;
+                                bottom: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.bt-section-appointment-home4{
+        .bt-list-custom-appointment.elementor-element {
+            .elementor-icon-list-items.elementor-inline-items {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 0 !important;
+                gap: 20px 15px;
+                .elementor-icon-list-item {
+                  margin: 0 !important;
+                    svg {
+                        margin: 0;
+                        padding: 16px;
+                        border: 1px solid $color-accent;
+                        border-radius: 50%;
+                        @media (max-width: $break-lg) and (min-width: $break-tl) {
+                            width: 60px;
+                            height: 60px;
+                            padding: 10px;
+                        }
+                        @media (max-width: $break-tl) {
+                            padding: 10px;
+                        }
+                        @media (max-width: 420px) {
+                            padding: 5px;
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                    .elementor-icon-list-text {
+                        @media (max-width: 420px) {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+        .bt-form-appointment-home1 {
+            .gform_confirmation_message {
+                color: #fff;
+            }
+            .gform_heading {
+                display: flex;
+                flex-direction: column-reverse;
+                grid-gap: 3px;
+                .gform_title {
+                    color: #fff;
+                    @media (max-width: $break-xs) {
+                        font-size: 45px;
+                    }
+                }
+                .gform_description {
+                    color: #fff;
+                    letter-spacing: 1.8px;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+            }
+            .gform-body {
+                input:not([type="checkbox"], [type="radio"]),
+                select,
+                textarea {
+                    color: #fff;
+                    border-bottom: 2px solid #fff;
+                    width: 100%;
+                    z-index: 1;
+                }
+                .select2-selection--single {
+                    border-bottom: 2px solid #fff;
+                    font-size: 18px;
+                    .select2-selection__rendered {
+                        color: #fff;
+                    }
+                    .select2-selection__arrow b {
+                        border-color: #fff transparent transparent transparent;
+                        border-width: 9px 8px 0 8px;
+                        margin-left: -13px;
+                        margin-top: 0;
+                    }
+                }
+                .ginput_container.ginput_container_date {
+                    svg {
+                        position: absolute;
+                        right: 13px;
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+                .gfield_checkbox {
+                    @extend .__bt_gfield_checkbox;
+                }
+                textarea {
+                    min-block-size: auto !important;
+                    height: 100px;
+                }
+            }
+            .gform_footer {
+                margin-top: 31px;
+                input[type="submit"] {
+                    border: 3px solid #fff !important;
+                    width: 100% !important;
+                    border-radius: 10px !important;
+                    background: #fff !important;
+                    color: #222 !important;
+                }
+            }
+            @media (max-width: $break-lg) and (min-width: $break-tl) {
+                padding: 31px;
+                > .e-con-inner {
+                    padding: 0;
                 }
             }
         }

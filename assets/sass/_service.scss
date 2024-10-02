@@ -12,7 +12,7 @@
     &--featured {
       .bt-cover-image {
         min-height: 314px;
-        border-radius: 20px 20px 80px 20px;
+        border-radius: 20px;
         box-sizing: border-box;
         @media (max-width: $break-lg) and (min-width: $break-tl) {
           min-height: 240px;
@@ -27,9 +27,9 @@
       margin-top: -68px;
     }
     &--content {
-      padding: 30px 30px 22px;
-      background: #f7f4ef;
-      border-radius: 20px 20px 0px 0px;
+      padding: 30px 30px 25px 41px;
+      border-radius: 20px 0px 0px 0px;
+      background: #e2f3ef;
       @media (max-width: 1100px) and (min-width: $break-tl) {
         padding-left: 15px;
         padding-right: 15px;
@@ -45,62 +45,42 @@
       top: -19px;
       background: $color-accent;
       color: #fff;
-      font-size: 18px;
+      font-size: 16px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      padding: 7px 14px 7px 11px;
-      &::before {
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border-top: 23px solid $color-accent;
-        border-left: 19px solid transparent;
-        position: absolute;
-        left: -18px;
-        top: 0;
-      }
-      &::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border-bottom: 23px solid $color-accent;
-        border-left: 19px solid transparent;
-        position: absolute;
-        left: -18px;
-        bottom: 0;
-      }
+      padding: 7px 20px 7px 20px;
+      border-radius: 5px 5px 0px 20px;
     }
     &--title {
       color: $color-primary;
       font-family: $secondary-font;
-      font-size: 26px;
-      font-weight: 600;
-      margin-bottom: 7px;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
       a {
         color: $color-primary;
       }
     }
     &--description {
-      color: $color-accent;
-      font-size: 17px;
-      font-weight: 500;
+      color: $color-text;
+      font-size: 16px;
+      font-weight: 400;
       line-height: normal;
     }
     &--button-booknow {
       display: flex;
       a {
         color: #fff;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 700;
+        line-height: normal;
         text-transform: uppercase;
         text-align: center;
         background: $color-accent;
         width: 100%;
         display: block;
-        padding: 14px 15px;
+        padding: 16px 15px 20px;
         border-radius: 0 0 20px 20px;
       }
     }
