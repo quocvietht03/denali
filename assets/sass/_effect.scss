@@ -618,7 +618,7 @@ body {
 	}
 }
 .bt-play-btn-effect {
-	.elementor-icon-box-icon {
+	.elementor-icon-box-icon,.elementor-icon-wrapper{
 		-webkit-animation: effectPlayButton 2s infinite;
 		animation: effectPlayButton 2s infinite;
 		border-radius: 50%;
@@ -628,7 +628,7 @@ body {
 	}
 }
 .bt-play-btn-effect2 {
-	.elementor-icon-box-icon {
+	.elementor-icon-box-icon,.elementor-icon-wrapper {
 		-webkit-animation: effectPlayButton2 2s infinite;
 		animation: effectPlayButton2 2s infinite;
 		border-radius: 50%;

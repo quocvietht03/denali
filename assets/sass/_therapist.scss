@@ -17,32 +17,27 @@
       }
     }
     &--infor {
-      padding: 31px 50px 31px;
-      background: #f7f4ef;
+      padding: 29px 50px;
+      border-radius: 0px 0px 50px 20px;
+      background: #E2F3EF;
       position: relative;
-      border-radius: 0px 0px 100px 20px;
-      @media(max-width:$break-xs){
-        border-radius: 0px 0px 65px 15px;
-      }
     }
     &--title {
       color: #222;
       font-family: $secondary-font;
-      font-size: 30px;
+      font-size: 26px;
       font-weight: 500;
+      line-height: normal;
       text-transform: capitalize;
       margin: 0;
-      @media (max-width: $break-lg) and (min-width: $break-tl) {
-        font-size: 25px;
-      }
     }
     &--job {
-      font-size: 15px;
+      font-size: 16px;
       background: $color-accent;
-      padding: 6px 15px;
+      padding: 7px 16px 8px;
       font-weight: 500;
+      line-height: normal;
       color: #fff;
-      line-height: 1.4;
       position: absolute;
       top: -17px;
       left: 50px;

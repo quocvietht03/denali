@@ -23,7 +23,19 @@
         }
     }
 }
-
+body {
+    --width-body: 100%;
+}
+.elementor-element {
+    @media (min-width: 1450px) {
+        &.bt-col-container-left {
+            padding-left: calc((var(--width-body) + 5px - var(--container-max-width)) / 2);
+        }
+        &.bt-col-container-right {
+            padding-right: calc((var(--width-body) + 5px - var(--container-max-width)) / 2);
+        }
+    }
+}
 .elementor-element {
     &.elementor-grid-4 {
         .elementor-loop-container {
@@ -1316,9 +1328,9 @@
                             padding: 10px;
                         }
                         @media (max-width: 420px) {
-                            padding: 5px;
-                            width: 35px;
-                            height: 35px;
+                            padding: 8px;
+                            width: 50px;
+                            height: 50px;
                         }
                     }
                     .elementor-icon-list-text {
@@ -1329,7 +1341,7 @@
                 }
             }
         }
-        .bt-form-appointment-home1 {
+        .bt-form-appointment-home4 {
             .gform_confirmation_message {
                 color: #fff;
             }
@@ -1394,15 +1406,65 @@
                 input[type="submit"] {
                     border: 3px solid #fff !important;
                     width: 100% !important;
-                    border-radius: 10px !important;
+                    border-radius: 33px !important;
                     background: #fff !important;
                     color: #222 !important;
                 }
+            }
+            @media (max-width: 1450px) and (min-width: $break-lg) {
+                padding-left: 70px;
+                padding-right: 70px;
             }
             @media (max-width: $break-lg) and (min-width: $break-tl) {
                 padding: 31px;
                 > .e-con-inner {
                     padding: 0;
+                }
+            }
+        }
+    }
+    &.bt-section-testimonials-home4 {
+        .bt-loop-testimonial-home4 {
+            @media (max-width: $break-xs) {
+                > .elementor-widget-container {
+                    padding-bottom: 80px !important;
+                }
+            }
+            .bt-post{
+                padding: 0;
+            }
+            .elementor-swiper-button {
+                width: 60px;
+                height: 60px;
+                background: #fff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg {
+                    path {
+                        fill: currentColor;
+                    }
+                }
+                @media (max-width: $break-xs) {
+                    &.elementor-swiper-button-prev {
+                        left: 40%;
+                        transform: translate(-60%, -50%);
+                    }
+                    &.elementor-swiper-button-next {
+                        right: 40%;
+                        transform: translate(60%, -50%);
+                    }
+                }
+            }
+        }
+        @media (max-width: 1470px) and (min-width: $break-tl) {
+            > .elementor-element {
+                &:last-child {
+                    padding-left: 30px;
+                    padding-right: 20px;
+                    padding-top: 90px;
+                    padding-bottom: 90px;
                 }
             }
         }

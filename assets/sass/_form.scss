@@ -45,7 +45,7 @@
     select,
     textarea {
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 200%;
       height: auto;
       color: var(--e-global-color-text, #555);
@@ -79,14 +79,14 @@
   .gform_footer {
     input[type="submit"] {
       display: inline-block !important;
-      font-size: 18px !important;
+      font-size: 17px !important;
       font-weight: 700 !important;
-      line-height: 150% !important;
+      line-height: normal !important;
       text-transform: uppercase !important;
       text-align: center !important;
       color: #ffffff !important;
       background: $color-accent !important;
-      padding: 17px 40px !important;
+      padding: 20px 40px !important;
       border: none !important;
       border-radius: 0 !important;
       &.gform-button--width-full {

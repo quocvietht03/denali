@@ -841,8 +841,8 @@
       &--quote-icon {
         position: absolute;
         z-index: 3;
-        right: 20px;
-        top: 20px;
+        right: 27px;
+        top: 24px;
         @media (max-width: $break-xs) {
           right: 14px;
           top: 13px;
@@ -855,7 +855,7 @@
       &--inner {
         position: relative;
         overflow: hidden;
-        padding: 50px 71px;
+        padding: 59px 94px;
         z-index: 1;
         background-image: url("../images/bg-item-testimonials.jpg");
         background-position: center;
@@ -917,14 +917,22 @@
       &--title-wrap {
         width: calc(100% - 88px);
         padding-left: 22px;
+        padding-right: 150px;
+        display: flex;
+        align-items: center;
+        gap: 10px 50px;
+        flex-wrap: wrap;
+        @media (max-width: $break-xs) {
+          padding-right: 0;
+        }
       }
       &--title {
         color: #fff;
         font-family: $secondary-font;
-        font-size: 30px;
-        font-weight: 600;
+        font-size: 28px;
+        font-weight: 500;
         transition: all 0.3s;
-        margin-bottom: 5px;
+        line-height: normal;
       }
       &--job {
         color: $color-accent;
@@ -932,6 +940,17 @@
         font-weight: 500;
         text-transform: capitalize;
         transition: all 0.3s;
+        line-height: normal;
+        margin-top: -3px;
+      }
+      &--rating {
+        display: flex;
+        span {
+          display: flex;
+          svg {
+            width: 20px;
+          }
+        }
       }
     }
   }
@@ -1524,7 +1543,6 @@
       }
     }
     .bt-post {
-     
       &--inner {
         position: relative;
       }
@@ -1544,8 +1562,8 @@
         flex-direction: column;
         gap: 21px;
       }
-      &--icon{
-        svg{
+      &--icon {
+        svg {
           width: 74px;
         }
       }

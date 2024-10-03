@@ -616,24 +616,21 @@
     }
 
     &--content {
-      background: #f7f4ef;
+      background: #e2f3ef;
       padding: 34px 50px 53px;
-      border-radius: 0px 0px 80px 20px;
+      border-radius: 0px 0px 50px 20px;
       position: relative;
       @media (max-width: 1300px) and (min-width: $break-tl) {
         padding-left: 15px;
         padding-right: 15px;
-        border-radius: 0 0 40px 20px;
       }
       @media (max-width: 880px) and (min-width: $break-sm) {
         padding-left: 15px;
         padding-right: 15px;
-        border-radius: 0 0 40px 20px;
       }
       @media (max-width: $break-xs) {
         padding-left: 15px;
         padding-right: 15px;
-        border-radius: 0 0 40px 20px;
       }
     }
 
@@ -648,7 +645,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        padding: 7px 15px;
+        padding: 7px 20px;
         border-radius: 5px;
       }
     }
@@ -659,11 +656,14 @@
       a {
         color: $color-primary;
         font-family: $secondary-font;
-        font-size: 26px;
+        font-size: 24px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 33px;
         text-transform: capitalize;
+        @media (max-width: $break-tl) {
+          line-height: 1;
+        }
         &:hover {
           color: $color-accent;
         }
@@ -672,7 +672,7 @@
 
     &--info {
       display: flex;
-      border: 5px solid #f7f4ef;
+      border: 5px solid #e2f3ef;
       border-radius: 0px 0px 20px 20px;
       background: #fff;
       margin: 0 43px;
