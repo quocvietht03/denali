@@ -29,7 +29,7 @@
     &--content {
       padding: 30px 30px 25px 41px;
       border-radius: 20px 0px 0px 0px;
-      background: #e2f3ef;
+      background: $color-secondary;
       @media (max-width: 1100px) and (min-width: $break-tl) {
         padding-left: 15px;
         padding-right: 15px;

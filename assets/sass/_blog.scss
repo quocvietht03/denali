@@ -616,7 +616,7 @@
     }
 
     &--content {
-      background: #e2f3ef;
+      background: $color-secondary;
       padding: 34px 50px 53px;
       border-radius: 0px 0px 50px 20px;
       position: relative;
@@ -672,7 +672,7 @@
 
     &--info {
       display: flex;
-      border: 5px solid #e2f3ef;
+      border: 5px solid $color-secondary;
       border-radius: 0px 0px 20px 20px;
       background: #fff;
       margin: 0 43px;

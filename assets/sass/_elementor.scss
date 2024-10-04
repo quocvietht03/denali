@@ -198,7 +198,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background-color: $color-secondary;
+            background-color: $color-primary;
           }
         }
       }
@@ -294,7 +294,7 @@
     align-items: center;
     justify-content: center;
     svg {
-      fill: $color-secondary;
+      fill: $color-primary;
       width: auto;
       height: 18px;
       transition: $transition;
@@ -1155,15 +1155,13 @@
         height: 20px;
       }
       &--title {
-        color: $color-primary;
-        font-family: $secondary-font;
+        color: $color-text;
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 400;
         a {
-          color: $color-primary;
-          font-family: $secondary-font;
+          color: $color-text;
           font-size: 20px;
-          font-weight: 500;
+          font-weight: 400;
           &:hover {
             color: $color-accent;
           }

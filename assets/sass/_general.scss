@@ -300,11 +300,11 @@
 }
 .__bt-button-dark-style {
   @extend .__bt-button-style;
-  background: $color-secondary;
+  background: $color-primary;
   &:hover,
   &:focus {
-    background: $color-secondary;
-    border-color: $color-secondary;
+    background: $color-primary;
+    border-color: $color-primary;
   }
 }
 .__bt-button-outline-style {
@@ -325,7 +325,7 @@
   &:hover,
   &:focus {
     color: #ffffff;
-    background: $color-secondary;
+    background: $color-primary;
   }
 }
 
@@ -933,39 +933,6 @@
 }
 
 /* Request Box */
-.bt-srq-box {
-  text-align: center;
-  color: #fff;
-  background: $color-secondary;
-  padding: 40px 20px 20px;
-  border-radius: 15px;
-  &--icon {
-    line-height: 0;
-    margin-bottom: 10px;
-    img {
-      width: 54px;
-      height: auto;
-    }
-  }
-  &--infor {
-    max-width: 280px;
-    margin: 0 auto;
-  }
-  &--title {
-    font-family: $secondary-font;
-    font-size: 24px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 12px;
-  }
-  &--book-link {
-    @extend .__bt-button-style;
-    text-transform: uppercase;
-    display: block;
-    margin-top: 36px;
-  }
-}
-
 .__bt-newsletter-form-style {
   form {
     position: relative;
