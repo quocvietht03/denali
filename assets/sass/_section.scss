@@ -591,7 +591,7 @@ body {
     }
     &.bt-list-icon-home2 {
         .elementor-icon-list-items {
-            @media (max-width: 1330px) and (min-width: $break-tl) {
+            @media (max-width: 1380px) and (min-width: $break-tl) {
                 margin-right: -10px !important;
                 margin-left: -10px !important;
                 justify-content: flex-start !important;
@@ -603,7 +603,7 @@ body {
             }
         }
         .elementor-icon-list-item {
-            @media (max-width: 1330px) and (min-width: $break-tl) {
+            @media (max-width: 1380px) and (min-width: $break-tl) {
                 margin-right: 10px !important;
                 margin-left: 10px !important;
             }
@@ -635,6 +635,12 @@ body {
                 > a {
                     flex-direction: column;
                     grid-gap: 10px;
+                    .elementor-icon-list-icon{
+                        padding-right: 0;
+                    }
+                    .elementor-icon-list-text{
+                        text-align: center;
+                    }
                 }
             }
         }

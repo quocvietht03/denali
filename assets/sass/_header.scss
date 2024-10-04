@@ -760,7 +760,7 @@
                 }
               }
             }
-            @media (max-width: 1230px) and (min-width: $break-tl) {
+            @media (max-width: 1240px) and (min-width: $break-tl) {
               &:first-child {
                 padding-left: 25px;
                 img {
@@ -769,8 +769,14 @@
               }
               &:last-child {
                 padding-right: 15px;
+                .elementor-widget-woocommerce-menu-cart {
+                  > .elementor-widget-container {
+                    margin: 0px 10px 0px 0;
+                  }
+                }
                 .elementor-widget-nav-menu {
                   > .elementor-widget-container {
+                    margin: 0px 10px 0px 0px;
                     .elementor-nav-menu {
                       .elementor-item {
                         font-size: 16px;
@@ -791,6 +797,117 @@
                       padding: 16px 20px 16px 20px;
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.bt-header-nav-style-4 {
+      &.elementor-sticky {
+        &--effects {
+          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+          > .e-con-inner {
+            > .elementor-element {
+              &:last-child {
+                .elementor-widget-nav-menu {
+                  > .elementor-widget-container {
+                    .elementor-nav-menu {
+                      .elementor-item {
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                      }
+                    }
+                  }
+                }
+              }
+              @media (max-width: $break-tl) {
+                &:first-child {
+                  margin-bottom: 0;
+                  img {
+                    max-width: 190px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      > .e-con-inner {
+        > .elementor-element {
+          transition:
+            padding 0.3s,
+            font-size 0.3s;
+          .elementor-widget-nav-menu {
+            > .elementor-widget-container {
+              .elementor-nav-menu {
+                .elementor-item {
+                  &.elementor-item-active,
+                  &:hover {
+                    background: $color-secondary;
+                  }
+                }
+                .menu-item-has-children {
+                  .elementor-item {
+                    .sub-arrow {
+                      padding: 0;
+                      svg {
+                        margin-left: 10px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media (max-width: 1340px) and (min-width: $break-tl) {
+            &:last-child {
+              .elementor-widget-woocommerce-menu-cart {
+                > .elementor-widget-container {
+                  margin: 0px 20px 0px 15px;
+                }
+              }
+              .elementor-widget-nav-menu {
+                > .elementor-widget-container {
+                  margin-right: 0;
+                  .elementor-nav-menu {
+                    .elementor-item {
+                      margin-left: 8px;
+                      margin-right: 8px;
+                      padding-left: 10px;
+                      padding-right: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media (max-width: 1240px) and (min-width: $break-tl) {
+            &:last-child {
+              .elementor-widget-woocommerce-menu-cart {
+                > .elementor-widget-container {
+                  margin: 0px 10px 0px 10px;
+                }
+              }
+              .elementor-widget-nav-menu {
+                > .elementor-widget-container {
+                  margin-right: 0;
+                  .elementor-nav-menu {
+                    .elementor-item {
+                      font-size: 17px;
+                      margin-left: 5px;
+                      margin-right: 5px;
+                      padding-left: 5px;
+                      padding-right: 5px;
+                    }
+                  }
+                }
+              }
+              .bt-button-header-style4 {
+                .elementor-button {
+                  padding: 17px 20px;
+                  font-size: 16px;
                 }
               }
             }
