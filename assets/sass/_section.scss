@@ -635,10 +635,10 @@ body {
                 > a {
                     flex-direction: column;
                     grid-gap: 10px;
-                    .elementor-icon-list-icon{
+                    .elementor-icon-list-icon {
                         padding-right: 0;
                     }
-                    .elementor-icon-list-text{
+                    .elementor-icon-list-text {
                         text-align: center;
                     }
                 }
@@ -1262,7 +1262,7 @@ body {
                 .elementor-element {
                     &:first-child {
                         .elementor-element {
-                            &:nth-child(2){
+                            &:nth-child(2) {
                                 left: 0;
                             }
                             &:last-child {
@@ -1279,7 +1279,7 @@ body {
                 .elementor-element {
                     &:first-child {
                         .elementor-element {
-                            &:nth-child(2){
+                            &:nth-child(2) {
                                 left: 8%;
                             }
                             &:last-child {
@@ -1311,7 +1311,7 @@ body {
             }
         }
     }
-    &.bt-section-appointment-home4{
+    &.bt-section-appointment-home4 {
         .bt-list-custom-appointment.elementor-element {
             .elementor-icon-list-items.elementor-inline-items {
                 display: grid;
@@ -1319,7 +1319,7 @@ body {
                 margin: 0 !important;
                 gap: 20px 15px;
                 .elementor-icon-list-item {
-                  margin: 0 !important;
+                    margin: 0 !important;
                     svg {
                         margin: 0;
                         padding: 16px;
@@ -1436,7 +1436,7 @@ body {
                     padding-bottom: 80px !important;
                 }
             }
-            .bt-post{
+            .bt-post {
                 padding: 0;
             }
             .elementor-swiper-button {
@@ -1471,6 +1471,28 @@ body {
                     padding-right: 20px;
                     padding-top: 90px;
                     padding-bottom: 90px;
+                }
+            }
+        }
+    }
+    &.bt-section-about-home5 {
+        > .e-con-inner {
+            > .elementor-element {
+                &:first-child {
+                    > .elementor-element {
+                        > .e-con-inner {
+                            @media (max-width: $break-lg) and (min-width: $break-tl) {
+                                > .elementor-element {
+                                    &:first-child {
+                                        top: -75px;
+                                    }
+                                }
+                            }
+                            @media(max-width: $break-tl) {
+                                position: relative;
+                            }
+                        }
+                    }
                 }
             }
         }

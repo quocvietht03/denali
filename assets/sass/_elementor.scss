@@ -1495,6 +1495,82 @@
         }
       }
     }
+    &.layout-default {
+      .bt-service-popular{
+        grid-gap: 0;
+        @media(max-width:$break-tl){
+          grid-gap: 2%;
+        }
+      }
+      .bt-post {
+        &--title {
+          color: #fff;
+          font-size: 26px;
+          font-weight: 500;
+          line-height: 30px;
+          text-align: center;
+          font-family: $secondary-font;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 20px;
+          bottom: 20px;
+          left: 20px;
+          right: 20px;
+          padding: 20px;
+          color: $color-primary;
+          @media (max-width: $break-lg) and (min-width: $break-tl) {
+            font-size: 20px;
+          }
+          @media (max-width: $break-xs) {
+            font-size: 20px;
+            padding: 15px;
+            left: 5px;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+          }
+          a {
+            color: #fff;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+        &--content {
+          &:before {
+            opacity: 0;
+          }
+        }
+        &--featured {
+          .bt-cover-image {
+            &::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: rgba(0, 0, 0, 0.5);
+              z-index: 1;
+              content: "";
+            }
+            img{
+              transform: scale(1.4) rotate(-45deg);
+            }
+          }
+        }
+        &:hover {
+          .bt-post--featured {
+            .bt-cover-image {
+              &::before {
+                background: rgba(112, 142, 134, 0.7);
+              }
+            }
+          }
+        }
+      }
+    }
   }
   &--style2 {
     .bt-service-popular {

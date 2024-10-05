@@ -222,7 +222,18 @@ class Widget_PopularServicesStyle1 extends Widget_Base
 				],
 			]
 		);
-
+		$this->add_control(
+			'layout_service',
+			[
+				'label' => __( 'Layout', 'denali' ),
+				'type' => Controls_Manager::SELECT,
+				'default' => 'default',
+				'options' => [
+					'default' => 'Default',
+					'style1' => 'Style1',
+				],
+			]
+		);
 		$this->end_controls_section();
 	}
 
@@ -441,7 +452,7 @@ class Widget_PopularServicesStyle1 extends Widget_Base
 		$query = $this->query_posts();
 
 ?>
-		<div class="bt-elwg-service-popular--style1">
+		<div class="bt-elwg-service-popular--style1 layout-<?php echo $settings['layout_service']; ?>">
 			<?php
 			if ($query->have_posts()) {
 			?>
