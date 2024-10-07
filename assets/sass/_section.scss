@@ -647,6 +647,11 @@ body {
     }
     &.bt-button-play-video {
         .elementor-icon-box-wrapper {
+            .elementor-icon-box-icon {
+                svg {
+                    fill: currentColor;
+                }
+            }
             @media (max-width: $break-sm) {
                 align-items: center;
             }
@@ -1488,11 +1493,141 @@ body {
                                     }
                                 }
                             }
-                            @media(max-width: $break-tl) {
+                            @media (max-width: $break-tl) {
                                 position: relative;
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    &.bt-section-treatments-home5 {
+        > .elementor-element {
+            --container-max-width: 1640px;
+            &.bt-col-container-left {
+                padding-left: 15px;
+                @media (min-width: 1670px) {
+                    padding-left: calc((var(--width-body) + 5px - var(--container-max-width)) / 2);
+                }
+            }
+            > .elementor-element {
+                &.bt-col-list-icon-text {
+                    > .e-con-inner {
+                        margin: 0;
+                        .elementor-widget-icon-box {
+                            .elementor-icon {
+                                border: 2px solid;
+                            }
+                        }
+                    }
+                    @media (max-width: 1260px) and (min-width: $break-tl) {
+                        margin-top: 30px;
+                        > .e-con-inner {
+                            gap: 15px;
+                        }
+                        .elementor-widget-icon-box {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            @media (max-width: 1390px) and (min-width: $break-tl) {
+                &:last-child {
+                    padding-left: 20px;
+                    .elementor-icon-box-title {
+                        line-height: 40px;
+                        a {
+                            font-size: 36px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.bt-section-appointment-home5 {
+        > .elementor-element {
+            &:first-child {
+                .bt-heading-relaxation {
+                    .elementor-heading-title {
+                        @media (max-width: $break-lg) and (min-width: $break-tl) {
+                            font-size: 60px;
+                        }
+                    }
+                }
+            }
+        }
+        @extend .__bt-form-appointment-style;
+        .gform_wrapper {
+            .gform_heading {
+                .gform_title {
+                    color: #fff;
+                    text-align: left;
+                }
+                .gform_description {
+                    color: #fff;
+                    text-align: left;
+                }
+            }
+            .gform-body {
+                input:not([type="checkbox"], [type="radio"]),
+                select,
+                textarea {
+                    color: #f0f0f0;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    border-bottom: 1px solid #dcdcdc;
+                }
+                textarea {
+                    min-block-size: auto !important;
+                    height: 100px;
+                }
+                .select2-selection--single {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #f0f0f0;
+                    border-bottom: 1px solid #dcdcdc;
+                    .select2-selection__rendered {
+                        color: #f0f0f0;
+                    }
+                    .select2-selection__arrow b {
+                        border-color: #fff transparent transparent transparent;
+                    }
+                }
+                .gfield_checkbox {
+                    @extend .__bt_gfield_checkbox;
+                    .gchoice {
+                        label {
+                            color: #f0f0f0;
+                            a {
+                                color: #fff;
+                            }
+                        }
+                        .checkmark {
+                            border-radius: 5px;
+                            border: 1px solid #b0b0b0;
+                            background: #fff5f4;
+                        }
+                    }
+                }
+                .ginput_container_date {
+                    svg {
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+            .gform_footer {
+                input[type="submit"] {
+                    border-radius: 30px !important;
+                    background: #fff !important;
+                    color: #698F65 !important;
+                    padding: 20px 40px !important;
+                    width: 100% !important;
                 }
             }
         }

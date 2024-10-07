@@ -274,7 +274,7 @@
 }
 .__bt-button-style {
   display: inline-block;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
@@ -1117,19 +1117,20 @@
         color: $color-primary;
         font-family: $secondary-font;
         font-size: 60px;
-        font-weight: 700;
-        margin-bottom: 6px;
-        line-height: normal;
+        font-weight: 500;
+        margin-bottom: 13px;
+        line-height: 1.1;
+        margin-top: 12px;
         @media (max-width: $break-xs) {
           font-size: 48px;
         }
       }
       .gform_description {
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
-        line-height: 33px;
-        max-width: 647px;
+        line-height: 30px;
+        max-width: 602px;
         color: $color-text;
         @media (max-width: $break-xs) {
           font-size: 18px;

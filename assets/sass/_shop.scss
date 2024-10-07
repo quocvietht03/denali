@@ -43,7 +43,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         margin-top: 30px;
-        border-radius: 10px;
+        border-radius: 30px;
         transition: all 0.3s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
         &.added {
           display: none;
@@ -69,16 +69,16 @@
     }
 
     &__infor {
-      padding: 34px 30px 29px 30px;
+      padding: 36px 30px 29px 30px;
       width: 100%;
-      background: #f7f4ef;
       z-index: 9;
       position: relative;
       box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      border-radius: 0px 0px 80px 20px;
+      border-radius: 0px 0px 50px 20px;
+      background: #FFF;
     }
 
     &__subtitle {
@@ -97,7 +97,7 @@
       font-size: 15px;
       font-style: normal;
       font-weight: 500;
-      padding: 6px 18px;
+      padding: 6px 22px;
       position: absolute;
       top: -18px;
       left: 50%;
@@ -112,10 +112,10 @@
       text-align: center;
       font-family: $secondary-font;
       font-size: 26px;
-      font-weight: 600;
+      font-weight: 500;
       text-transform: capitalize;
       margin: 0;
-      line-height: normal;
+      line-height: 1.1;
     }
     .woocommerce-loop-product__infor {
       .price {
