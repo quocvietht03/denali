@@ -284,17 +284,17 @@ class Widget_SiteBoxPhone extends Widget_Base
 
 						<div class="bt-site-box-phone--icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-								<g clip-path="url(#clip0_19_2362)">
-									<path d="M47.4297 41.2344H38.2891V26H47.4297C49.1125 26 50.4766 27.3641 50.4766 29.0469V38.1875C50.4766 39.8703 49.1125 41.2344 47.4297 41.2344Z" stroke="#C2A74E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M13.7109 41.2344H4.57031C2.88752 41.2344 1.52344 39.8703 1.52344 38.1875V29.0469C1.52344 27.3641 2.88752 26 4.57031 26H13.7109V41.2344Z" stroke="#C2A74E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M7.61719 41.2344V19.8047C7.61719 9.70826 15.9036 1.52344 26 1.52344C36.0964 1.52344 44.3828 9.70826 44.3828 19.8047V41.2344" stroke="#C2A74E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M44.3828 19.8047H47.4297" stroke="#C2A74E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M4.57031 19.8047H7.61719" stroke="#C2A74E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M32.0938 47.4297H41.3359C43.0187 47.4297 44.3828 46.0656 44.3828 44.3828V41.2344" stroke="#C2A74E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M29.0469 50.4766H22.9531C21.2703 50.4766 19.9062 49.1125 19.9062 47.4297C19.9062 45.7469 21.2703 44.3828 22.9531 44.3828H29.0469C30.7297 44.3828 32.0938 45.7469 32.0938 47.4297C32.0938 49.1125 30.7297 50.4766 29.0469 50.4766Z" stroke="#C2A74E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+								<g clip-path="url(#clip0_1200_1306)">
+									<path d="M47.4297 41.2344H38.2891V26H47.4297C49.1125 26 50.4766 27.3641 50.4766 29.0469V38.1875C50.4766 39.8703 49.1125 41.2344 47.4297 41.2344Z" stroke="#698F65" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M13.7109 41.2344H4.57031C2.88752 41.2344 1.52344 39.8703 1.52344 38.1875V29.0469C1.52344 27.3641 2.88752 26 4.57031 26H13.7109V41.2344Z" stroke="#698F65" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M7.61719 41.2344V19.8047C7.61719 9.70826 15.9036 1.52344 26 1.52344C36.0964 1.52344 44.3828 9.70826 44.3828 19.8047V41.2344" stroke="#698F65" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M44.3828 19.8047H47.4297" stroke="#698F65" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M4.57031 19.8047H7.61719" stroke="#698F65" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M32.0938 47.4297H41.3359C43.0187 47.4297 44.3828 46.0656 44.3828 44.3828V41.2344" stroke="#698F65" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M29.0469 50.4766H22.9531C21.2703 50.4766 19.9062 49.1125 19.9062 47.4297C19.9062 45.7469 21.2703 44.3828 22.9531 44.3828H29.0469C30.7297 44.3828 32.0938 45.7469 32.0938 47.4297C32.0938 49.1125 30.7297 50.4766 29.0469 50.4766Z" stroke="#698F65" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 								</g>
 								<defs>
-									<clipPath id="clip0_19_2362">
+									<clipPath id="clip0_1200_1306">
 										<rect width="52" height="52" fill="white" />
 									</clipPath>
 								</defs>
@@ -317,7 +317,5 @@ class Widget_SiteBoxPhone extends Widget_Base
 <?php
 	}
 
-	protected function content_template()
-	{
-	}
+	protected function content_template() {}
 }

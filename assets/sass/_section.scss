@@ -1547,19 +1547,12 @@ body {
         }
     }
     &.bt-section-appointment-home5 {
-        > .elementor-element {
-            &:first-child {
-                .bt-heading-relaxation {
-                    .elementor-heading-title {
-                        @media (max-width: $break-lg) and (min-width: $break-tl) {
-                            font-size: 60px;
-                        }
-                    }
-                }
-            }
-        }
         @extend .__bt-form-appointment-style;
         .gform_wrapper {
+            .gform_confirmation_message {
+                color: #fff;
+                text-align: left;
+            }
             .gform_heading {
                 .gform_title {
                     color: #fff;
@@ -1625,9 +1618,81 @@ body {
                 input[type="submit"] {
                     border-radius: 30px !important;
                     background: #fff !important;
-                    color: #698F65 !important;
+                    color: #698f65 !important;
                     padding: 20px 40px !important;
                     width: 100% !important;
+                }
+            }
+        }
+        .bt-loop-testimonial-home5 {
+            .elementor-swiper-button {
+                @media (max-width: 1250px) and (min-width: $break-tl) {
+                    &.elementor-swiper-button-prev {
+                        left: 0;
+                    }
+                    &.elementor-swiper-button-next {
+                        right: 0;
+                    }
+                }
+                @media (max-width: $break-sm) {
+                    &.elementor-swiper-button-prev {
+                        left: 40% !important;
+                        transform: translate(-60%, -50%) !important;
+                    }
+                    &.elementor-swiper-button-next {
+                        right: 40% !important;
+                        transform: translate(60%, -50%) !important;
+                    }
+                }
+            }
+
+            @media (max-width: $break-sm) {
+                > .elementor-widget-container {
+                    padding-bottom: 80px;
+                }
+            }
+        }
+    }
+    &.bt-section-hours-home5{
+        .bt-elwg-time-list--default {
+            .bt-time--item:not(:last-child) {
+                padding-bottom: 19px;
+                margin-bottom: 16px;
+                border-bottom: 1px solid #c2c2c2;
+            }
+            .bt-time--title{
+                margin-bottom: 0;
+            }
+        }
+        > .e-con-inner {
+            @media (max-width: 1410px) and (min-width: $break-tl) {
+                > .elementor-element{
+                    &:last-child{
+                        padding-left: 0;
+                    }
+                }
+            }
+            @media (max-width: 1315px) and (min-width: $break-tl) {
+                grid-gap: 15px;
+            }
+            > .elementor-element {
+                &:first-child {
+                    @media (max-width: 1260px) and (min-width: $break-tl) {
+                        width: 45%;
+                    }
+                }
+                &:last-child {
+                    @media (max-width: 1260px) and (min-width: $break-tl) {
+                        width: 32%;
+                    }
+                    .bt-col-icon-phone {
+                        > .elementor-widget-container {
+                            @media (max-width: 1260px) and (min-width: $break-tl) {
+                                padding-left: 20px;
+                                padding-right: 20px;
+                            }
+                        }
+                    }
                 }
             }
         }
