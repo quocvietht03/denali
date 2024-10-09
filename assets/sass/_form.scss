@@ -1,3 +1,20 @@
+.gform-theme--framework
+  :where(
+    :not(svg)
+      :not(svg *):not(symbol *):not(.gform-theme__no-reset--el)
+      :not(.gform-theme__no-reset--children *):not(.gform-theme__disable)
+      :not(.gform-theme__disable *):not(.gform-theme__disable-reset)
+      :not(.gform-theme__disable-reset *):not(.gform_heading *):not(.gfield--type-html *)
+      :not(.gfield--type-section *):not(.form_saved_message > *)
+      :not(.form_saved_message_sent > *):not(.gform_confirmation_message *)
+      :not(.wp-editor-container):not(.mce-tinymce):not(.mce-tinymce *)
+      :not(.wp-editor-area):not(.gfield_description > *)
+      :not(.gform-field-label--type-inline > :not(span))
+  ) path {
+ 
+  display: revert;
+  all: revert-layer;
+}
 .gform_wrapper {
   &.gform-theme--api,
   &.gform-theme--foundation {

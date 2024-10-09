@@ -217,12 +217,14 @@
 		$('.bt-col-container-right').css('--width-body', widthBody + 'px');
 	}
 	function Denali_GF_Select2() {
-		if (jQuery('.gform_wrapper select').length > 0) {
-			$('.gform_wrapper select').select2({
-				dropdownParent: $(".gform_wrapper"),
+		$('.gform_wrapper').each(function() {
+			const $self = $(this);
+			$($self).find('select').select2({
+				dropdownParent: $self,
 				minimumResultsForSearch: Infinity
-			 });
-		}
+			});
+		})
+
 		if (jQuery('.gfield_checkbox').length > 0) {
 			jQuery('.gfield_checkbox .gchoice').each(function () {
 				jQuery(this).append('<div class=\"checkmark\"></div>');
