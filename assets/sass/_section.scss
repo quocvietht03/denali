@@ -190,6 +190,7 @@ body {
             form {
                 input.tnp-email {
                     background: transparent;
+                    border: none;
                     border-bottom: 2px solid #fff;
                     max-width: calc(100% - 295px);
                     padding: 10px 0;
@@ -213,7 +214,9 @@ body {
                     right: 0;
                     background-color: transparent;
                     border: 3px solid #fff;
-                    border-radius: 10px;
+                    border-radius: 30px;
+                    font-size: 17px;
+                    padding: 17px 48px 17px 75px;
                     @media (max-width: $break-sm) {
                         position: relative;
                         top: initial;
@@ -390,7 +393,7 @@ body {
         }
         .elementor-heading-title {
             @media (max-width: 1150px) and (min-width: $break-tl) {
-                font-size: 30px !important;
+                font-size: 27px !important;
             }
         }
     }
