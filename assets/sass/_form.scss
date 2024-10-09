@@ -1,25 +1,3 @@
-.gform-theme--framework
-  :where(
-    :not(html):not(iframe):not(canvas):not(img):not(svg):not(video)
-      :not(svg *):not(symbol *):not(.gform-theme__no-reset--el)
-      :not(.gform-theme__no-reset--children *):not(.gform-theme__disable)
-      :not(.gform-theme__disable *):not(.gform-theme__disable-reset)
-      :not(.gform-theme__disable-reset *):not(.gform_heading *):not(.gfield--type-html *)
-      :not(.gfield--type-section *):not(.form_saved_message > *)
-      :not(.form_saved_message_sent > *):not(.gform_confirmation_message *)
-      :not(.wp-editor-container):not(.mce-tinymce):not(.mce-tinymce *)
-      :not(.wp-editor-area):not(.gfield_description > *)
-      :not(.gform-field-label--type-inline > :not(span))
-  ) {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-  font: inherit;
-  color: inherit;
-  display: revert;
-  all: revert-layer;
-}
 .gform_wrapper {
   &.gform-theme--api,
   &.gform-theme--foundation {
@@ -59,10 +37,14 @@
       width: 100%;
       height: 58px;
     }
+    select.select2-hidden-accessible {
+      width: 100% !important;
+    }
     textarea {
       min-block-size: auto !important;
       height: 100px;
     }
+
     .ginput_container_date {
       position: relative;
       z-index: 1;
