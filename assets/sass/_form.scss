@@ -11,7 +11,6 @@
       :not(.wp-editor-area):not(.gfield_description > *)
       :not(.gform-field-label--type-inline > :not(span))
   ) path {
- 
   display: revert;
   all: revert-layer;
 }
@@ -76,6 +75,13 @@
     }
   }
   .gform_footer {
+    flex-wrap: nowrap !important;
+    position: relative;
+    > *:not(input) {
+      position: absolute;
+      right: 10px ;
+      z-index: 9;
+    }
     input[type="submit"] {
       display: inline-block !important;
       font-size: 17px !important;
@@ -88,6 +94,7 @@
       padding: 20px 40px !important;
       border: none !important;
       border-radius: 0 !important;
+      box-shadow: none !important;
       &.gform-button--width-full {
         width: 100% !important;
       }
@@ -103,4 +110,7 @@
     margin-top: 35px;
     margin-bottom: 20px;
   }
+}
+body #gform_wrapper_1[data-form-index="0"].gform-theme{
+  --gf-color-primary: var(--e-global-color-accent, #698F65);
 }

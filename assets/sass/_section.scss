@@ -1656,21 +1656,21 @@ body {
             }
         }
     }
-    &.bt-section-hours-home5{
+    &.bt-section-hours-home5 {
         .bt-elwg-time-list--default {
             .bt-time--item:not(:last-child) {
                 padding-bottom: 19px;
                 margin-bottom: 16px;
                 border-bottom: 1px solid #c2c2c2;
             }
-            .bt-time--title{
+            .bt-time--title {
                 margin-bottom: 0;
             }
         }
         > .e-con-inner {
             @media (max-width: 1410px) and (min-width: $break-tl) {
-                > .elementor-element{
-                    &:last-child{
+                > .elementor-element {
+                    &:last-child {
                         padding-left: 0;
                     }
                 }
@@ -1695,6 +1695,172 @@ body {
                                 padding-right: 20px;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    &.bt-section-about-home6 {
+        > .e-con-inner {
+            > .elementor-element {
+                .bt-col-list-icon-text {
+                    .elementor-widget-icon-box {
+                        .elementor-icon-box-title {
+                            padding-top: 5px;
+                        }
+                        .elementor-icon {
+                            border: 2px solid;
+                        }
+                    }
+                    @media (max-width: 1260px) and (min-width: $break-tl) {
+                        .elementor-widget-icon-box {
+                            width: 100%;
+                        }
+                    }
+                }
+                @media (max-width: 1260px) and (min-width: $break-tl) {
+                    &:first-child {
+                        padding-right: 0;
+                        > .elementor-element {
+                            &:nth-child(2) {
+                                > .elementor-widget-container {
+                                    margin-top: -100px;
+                                }
+                            }
+                            &:nth-child(3) {
+                                left: 312px;
+                                bottom: 22%;
+                            }
+                        }
+                    }
+                }
+                @media (max-width: $break-sm) and (min-width: 550px) {
+                    &:first-child {
+                        > .elementor-element {
+                            &:nth-child(3) {
+                                left: 70%;
+                                bottom: 29%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.bt-section-appointment-home6 {
+        .bt-form-appointment-home6 {
+            .gform_confirmation_message {
+                color: #fff;
+            }
+            .gform_heading {
+                display: flex;
+                flex-direction: column-reverse;
+                grid-gap: 3px;
+                .gform_title {
+                    color: #fff;
+                    @media (max-width: $break-xs) {
+                        font-size: 45px;
+                    }
+                }
+                .gform_description {
+                    color: #fff;
+                    letter-spacing: 1.8px;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+            }
+            .gform-body {
+                input:not([type="checkbox"], [type="radio"]),
+                select,
+                textarea {
+                    color: #fff;
+                    border-bottom: 2px solid #fff;
+                    width: 100%;
+                    z-index: 1;
+                }
+                .select2-selection--single {
+                    border-bottom: 2px solid #fff;
+                    font-size: 18px;
+                    .select2-selection__rendered {
+                        color: #fff;
+                    }
+                    .select2-selection__arrow b {
+                        border-color: #fff transparent transparent transparent;
+                        border-width: 9px 8px 0 8px;
+                        margin-left: -13px;
+                        margin-top: 0;
+                    }
+                }
+                .ginput_container.ginput_container_date {
+                    svg {
+                        position: absolute;
+                        right: 13px;
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+                .gfield_checkbox {
+                    @extend .__bt_gfield_checkbox;
+                }
+                textarea {
+                    min-block-size: auto !important;
+                    height: 100px;
+                }
+            }
+            .gform_footer {
+                margin-top: 31px;
+                input[type="submit"] {
+                    border: 3px solid #fff !important;
+                    width: 100% !important;
+                    border-radius: 33px !important;
+                    background: #fff !important;
+                    color: #222 !important;
+                }
+            }
+            @media (max-width: 1450px) and (min-width: $break-lg) {
+                padding-left: 70px;
+                padding-right: 70px;
+            }
+            @media (max-width: $break-lg) and (min-width: $break-tl) {
+                padding: 31px;
+                > .e-con-inner {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    &.bt-section-wellness-journeys-home6 {
+        > .e-con-inner {
+            @media (max-width: 1125px) and (min-width: $break-tl) {
+                flex-wrap: wrap !important;
+            }
+            > .elementor-element {
+                &:first-child {
+                    @media (max-width: 1125px) and (min-width: $break-tl) {
+                        width: 100%;
+                    }
+                }
+                &:last-child {
+                    @media (max-width: 1300px) and (min-width: 1125.25px) {
+                        > .elementor-element{
+                            &:last-child{
+                                > .e-con-inner{
+                                    gap: 15px;
+                                    .elementor-button{
+                                        padding: 20px 24px 20px 23px;
+                                    }
+                                    .bt-site-box-phone--infor .bt-phone{
+                                        font-size: 22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @media (max-width: 1125px) and (min-width: $break-tl) {
+                        width: 100%;
+                        padding-top: 30px;
+                        padding-left: 0;
                     }
                 }
             }
