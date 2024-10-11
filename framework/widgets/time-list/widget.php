@@ -147,6 +147,18 @@ class Widget_TimeList extends Widget_Base
 				],
 			]
 		);
+		$this->add_control(
+			'icon_color',
+			[
+				'label' => __('Color Icon', 'denali'),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-time--icon svg' => 'fill: {{VALUE}};',
+					'{{WRAPPER}} .bt-time--icon svg path' => 'fill: {{VALUE}};',
+				],
+			]
+		);
 		$this->add_responsive_control(
 			'icon_size',
 			[
@@ -162,7 +174,7 @@ class Widget_TimeList extends Widget_Base
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .bt-elwg-site-infor' => 'column-gap: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .bt-time--icon svg' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}}',
 				],
 
 				'condition' => [
@@ -185,7 +197,7 @@ class Widget_TimeList extends Widget_Base
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .bt-elwg-site-infor' => 'column-gap: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .bt-time--item' => 'column-gap: {{SIZE}}{{UNIT}}',
 				],
 
 				'condition' => [
@@ -290,7 +302,11 @@ class Widget_TimeList extends Widget_Base
 						<li class="bt-time--item">
 							<?php if (!empty($settings['time_enable_icon']) && $settings['time_enable_icon'] === 'yes' && !empty($settings['time_icon']['url'])) { ?>
 								<div class="bt-time--icon">
-									<img src="<?php echo esc_url($settings['time_icon']['url']); ?>" alt="">
+									<?php
+									if (!empty($settings['time_icon']['url']) && 'svg' === pathinfo($settings['time_icon']['url'], PATHINFO_EXTENSION)) {
+										echo file_get_contents($settings['time_icon']['url']);
+									}
+									?>
 								</div>
 							<?php } ?>
 							<div class="bt-time--infor">
@@ -310,7 +326,11 @@ class Widget_TimeList extends Widget_Base
 							<li class="bt-time--item">
 								<?php if (!empty($settings['time_enable_icon']) && $settings['time_enable_icon'] === 'yes' && !empty($settings['time_icon']['url'])) { ?>
 									<div class="bt-time--icon">
-										<img src="<?php echo esc_url($settings['time_icon']['url']); ?>" alt="">
+										<?php
+										if (!empty($settings['time_icon']['url']) && 'svg' === pathinfo($settings['time_icon']['url'], PATHINFO_EXTENSION)) {
+											echo file_get_contents($settings['time_icon']['url']);
+										}
+										?>
 									</div>
 								<?php } ?>
 								<div class="bt-time--infor">
@@ -332,7 +352,5 @@ class Widget_TimeList extends Widget_Base
 <?php
 	}
 
-	protected function content_template()
-	{
-	}
+	protected function content_template() {}
 }

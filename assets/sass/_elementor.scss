@@ -1051,7 +1051,7 @@
     .bt-post {
       background: $color-accent;
       padding: 61px 40px 62px 40px;
-      border-radius: 20px 20px 80px 20px;
+      border-radius: 20px 20px 50px 20px;
       &::before {
         content: "";
         position: absolute;
@@ -1063,7 +1063,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 20px 20px 80px 20px;
+        border-radius: 20px 20px 50px 20px;
       }
       &--rating {
         display: flex;
@@ -1084,13 +1084,13 @@
         color: #fff;
         text-align: center;
         font-family: $secondary-font;
-        font-size: 30px;
-        font-weight: 600;
+        font-size: 26px;
+        font-weight: 500;
         line-height: 46px;
         margin-top: 13px;
         @media (max-width: $break-xs) {
-          font-size: 25px;
-          line-height: 38px;
+          font-size: 20px;
+          line-height: 34px;
         }
         > * {
           margin-left: auto;
@@ -1107,7 +1107,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        padding-top: 39px;
+        padding-top: 29px;
         transition: all 0.3s;
       }
       &--avatar {
@@ -1141,6 +1141,7 @@
         margin-top: 5px;
         font-size: 18px;
         font-weight: 500;
+        line-height: normal;
       }
     }
   }
@@ -1834,8 +1835,7 @@
   &--style1 {
     .bt-pricing {
       &-item {
-        box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
-        border-radius: 20px 20px 80px 20px;
+        border-radius: 20px 20px 50px 20px;
       }
       &--featured {
         position: relative;
@@ -1862,9 +1862,10 @@
       &--heading {
         color: #fff;
         font-family: $secondary-font;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: normal;
+        font-weight: 500;
+        font-size: 33px;
+        line-height: 1.1;
+        margin-bottom: 5px;    
       }
       &--price {
         color: $color-accent;
@@ -1888,16 +1889,16 @@
         font-weight: 400;
         line-height: normal;
         background: $color-accent;
-        padding: 6px 14px 5px 13px;
+        padding: 7px 14px 6px 13px;
         position: absolute;
         bottom: -16px;
         border-radius: 5px;
       }
       &--infor {
         padding: 36px 44px 48px 44px;
-        background: #fff;
+        background: $color-secondary;
         position: relative;
-        border-radius: 0 0 80px 20px;
+        border-radius: 0 0 50px 20px;
         &::before {
           content: "";
           position: absolute;
@@ -1931,18 +1932,19 @@
         margin-bottom: 40px;
         display: flex;
         flex-direction: column;
-        grid-gap: 18px;
+        grid-gap: 19px;
         padding: 0 10px;
         position: relative;
         z-index: 2;
         li {
           display: flex;
           grid-gap: 8px;
-          align-items: baseline;
+          align-items: center;
           color: $color-text;
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
+          line-height: normal;
           text-decoration-thickness: 1px;
           svg {
             width: 18px;
@@ -1959,23 +1961,23 @@
       }
       &--button {
         color: #fff;
-        font-size: 18px;
+        font-size: 17px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
-        padding: 18px 30px;
+        padding: 20px 30px;
         background: $color-accent;
         display: block;
         width: 100%;
-        border-radius: 10px;
+        border-radius: 30px;
         @media (max-width: $break-xs) {
           padding: 18px 30px;
         }
       }
       &--button-more {
         color: $color-text;
-        font-size: 16px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
@@ -1983,6 +1985,8 @@
         a {
           color: $color-accent;
           text-decoration-line: underline;
+          text-underline-offset: 2px;
+          text-decoration-thickness: 1px;
         }
       }
     }
@@ -2002,18 +2006,17 @@
         align-items: center;
 
         &:not(:last-child) {
-          padding-bottom: 14px;
-          margin-bottom: 10px;
-          border-bottom: 1px dashed #aaaaaa;
+          padding-bottom: 22px;
+          margin-bottom: 18px;
+          border-bottom: 1px dashed #7C7C7C;
         }
       }
       &--icon {
         display: flex;
         align-items: center;
-
-        img {
-          width: 100%;
-          max-width: 54px;
+        svg {
+          width: 54px;
+          height: 54px;
         }
       }
       &--title {

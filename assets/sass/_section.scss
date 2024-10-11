@@ -905,6 +905,7 @@ body {
                     &--item-icon {
                         min-width: 87px;
                         min-height: 87px;
+                        border-radius: 10px 10px 40px 10px;
                         svg {
                             max-width: 38px;
                         }
@@ -1046,63 +1047,33 @@ body {
                 }
             }
             &:nth-child(5n + 1) {
-                border-bottom-left-radius: 80px;
+                border-bottom-left-radius: 50px;
                 .elementor-gallery-item__overlay {
-                    border-bottom-left-radius: 80px;
-                }
-                @media (max-width: $break-xs) {
                     border-bottom-left-radius: 50px;
-                    .elementor-gallery-item__overlay {
-                        border-bottom-left-radius: 50px;
-                    }
                 }
             }
             &:nth-child(5n + 2) {
-                border-top-left-radius: 80px;
+                border-top-left-radius: 50px;
                 .elementor-gallery-item__overlay {
-                    border-top-left-radius: 80px;
-                }
-                @media (max-width: $break-xs) {
                     border-top-left-radius: 50px;
-                    .elementor-gallery-item__overlay {
-                        border-top-left-radius: 50px;
-                    }
                 }
             }
             &:nth-child(5n + 3) {
-                border-top-right-radius: 80px;
+                border-top-right-radius: 50px;
                 .elementor-gallery-item__overlay {
-                    border-top-right-radius: 80px;
-                }
-                @media (max-width: $break-xs) {
                     border-top-right-radius: 50px;
-                    .elementor-gallery-item__overlay {
-                        border-top-right-radius: 50px;
-                    }
                 }
             }
             &:nth-child(5n + 4) {
-                border-top-left-radius: 80px;
+                border-top-left-radius: 50px;
                 .elementor-gallery-item__overlay {
-                    border-top-left-radius: 80px;
-                }
-                @media (max-width: $break-xs) {
                     border-top-left-radius: 50px;
-                    .elementor-gallery-item__overlay {
-                        border-top-left-radius: 50px;
-                    }
                 }
             }
             &:nth-child(5n + 5) {
-                border-bottom-right-radius: 80px;
+                border-bottom-right-radius: 50px;
                 .elementor-gallery-item__overlay {
-                    border-bottom-right-radius: 80px;
-                }
-                @media (max-width: $break-xs) {
                     border-bottom-right-radius: 50px;
-                    .elementor-gallery-item__overlay {
-                        border-bottom-right-radius: 50px;
-                    }
                 }
             }
         }
