@@ -10889,8 +10889,8 @@ body {
   }
 }
 .elementor-element.bt-section-hours-home2 .bt-elwg-time-list--default .bt-time--item:not(:last-child) {
-  padding-bottom: 22px;
-  margin-bottom: 15px;
+  padding-bottom: 18px;
+  margin-bottom: 14px;
   border-bottom: 1px solid #c2c2c2;
 }
 @media (max-width: 1470px) and (min-width: 1024.98px) {
