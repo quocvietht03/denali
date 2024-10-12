@@ -803,6 +803,18 @@ body {
             }
         }
         @extend .__bt-form-appointment-style;
+        .gform_wrapper{
+            .gform_heading{
+                .gform_description{
+                    margin: 0 auto;
+                }
+            }
+            .gform_footer {
+                input[type="submit"] {
+                    border-radius: 30px !important;
+                }
+            }
+        }
     }
     &.bt-loop-service-item {
         &.elementor-grid-4 {
