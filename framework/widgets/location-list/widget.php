@@ -374,6 +374,13 @@ class Widget_LocationList extends Widget_Base
             ]
         );
         $this->add_control(
+            'location_address_style',
+            [
+                'label' => esc_html__('Address', 'denali'),
+                'type' => Controls_Manager::HEADING,
+            ]
+        );
+        $this->add_control(
             'location_address_color',
             [
                 'label' => __('Color', 'denali'),
@@ -391,6 +398,13 @@ class Widget_LocationList extends Widget_Base
                 'label' => __('Typography', 'denali'),
                 'default' => '',
                 'selector' => '{{WRAPPER}} .bt-elwg-location-list--default .bt-location-list--heading-infor .bt-location-title-wrap span',
+            ]
+        );
+        $this->add_control(
+            'location_button_style',
+            [
+                'label' => esc_html__('Button', 'denali'),
+                'type' => Controls_Manager::HEADING,
             ]
         );
         $this->start_controls_tabs('button_style_tabs');
@@ -480,7 +494,15 @@ class Widget_LocationList extends Widget_Base
             ]
         );
         $this->end_controls_tab();
-
+        $this->add_group_control(
+            Group_Control_Typography::get_type(),
+            [
+                'name' => 'location_button_typography',
+                'label' => __('Typography', 'denali'),
+                'default' => '',
+                'selector' => '{{WRAPPER}} .bt-elwg-location-list--default .bt-location-list--heading-button a',
+            ]
+        );
         $this->end_controls_tabs();
         $this->end_controls_section();
         $this->start_controls_section(
