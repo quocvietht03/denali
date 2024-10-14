@@ -285,7 +285,7 @@ class Widget_ServicesList extends Widget_Base
 				'name' => 'title_typography',
 				'label' => __('Typography', 'denali'),
 				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-post--title',
+				'selector' => '{{WRAPPER}} .bt-post--title a',
 			]
 		);
 
