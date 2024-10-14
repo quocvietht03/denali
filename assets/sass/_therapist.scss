@@ -55,9 +55,6 @@
     gap: 30px;
     .bt-post {
       width: calc(25% - 22.5px);
-      &--infor {
-        background: #fff;
-      }
       @media (max-width: $break-tl) {
         width: calc(50% - 15px);
       }
@@ -238,14 +235,18 @@
       &--button-booknow {
         a {
           color: #fff;
-          font-size: 18px;
+          font-size: 17px;
           font-weight: 700;
           text-transform: uppercase;
           text-align: center;
           background: $color-accent;
           display: block;
-          padding: 15px 40px;
+          padding: 20px 40px;
           border-radius: 10px;
+          line-height: normal;
+          @media(max-width:$break-xs){
+            padding: 15px 40px;
+          }
         }
       }
     }
