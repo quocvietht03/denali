@@ -338,7 +338,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-transform: uppercase;
+    text-transform: capitalize;
     word-break: break-word;
     display: flex;
     justify-content: center;
@@ -1807,7 +1807,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding: 18px 54px;
         background: $color-accent;
         display: inline-block;
@@ -1963,7 +1963,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding: 20px 30px;
         background: $color-accent;
         display: block;
@@ -2185,7 +2185,7 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            text-transform: uppercase;
+            text-transform: capitalize;
             padding: 14px 35px;
             border-radius: 10px 10px 25px 10px;
             &:hover {

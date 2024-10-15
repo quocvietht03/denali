@@ -222,7 +222,7 @@
       }
       input[type="submit"] {
         font-family: $primary-font;
-        text-transform: uppercase;
+        text-transform: capitalize;
         border-radius: 30px;
         line-height: normal;
         padding: 18px 40px;

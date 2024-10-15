@@ -237,12 +237,12 @@
           color: #fff;
           font-size: 17px;
           font-weight: 700;
-          text-transform: uppercase;
+          text-transform: capitalize;
           text-align: center;
           background: $color-accent;
           display: block;
           padding: 20px 40px;
-          border-radius: 10px;
+          border-radius: 30px;
           line-height: normal;
           @media(max-width:$break-xs){
             padding: 15px 40px;

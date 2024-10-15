@@ -161,7 +161,7 @@ $feature_section = get_field('feature_section', 'options');
 						}
 						?>
 					</div>
-					<?php echo denali_service_button_book_now_render('Make AN Appointment'); ?>
+					<?php echo denali_service_button_book_now_render('Make an Appointment'); ?>
 				</div>
 			</div>
 		<?php

@@ -1696,7 +1696,7 @@ img.alignright {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border: 3px solid #fff;
   display: block;
   padding: 17px;
@@ -1754,7 +1754,7 @@ img.alignright {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 16px 37px 16px 75px;
   min-height: auto;
   display: flex;
@@ -3445,7 +3445,7 @@ body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
   font-size: 17px !important;
   font-weight: 700 !important;
   line-height: normal !important;
-  text-transform: uppercase !important;
+  text-transform: inherit !important;
   text-align: center !important;
   color: #ffffff !important;
   background: var(--e-global-color-accent, #698F65) !important;
@@ -3735,7 +3735,7 @@ body #gform_wrapper_1[data-form-index="0"].gform-theme {
 }
 .bt-comment-wrapper .comment-respond .comment-form input[type=submit] {
   font-family: var(--e-global-typography-primary-font-family, "Cabin");
-  text-transform: uppercase;
+  text-transform: capitalize;
   border-radius: 30px;
   line-height: normal;
   padding: 18px 40px;
@@ -5774,12 +5774,12 @@ body {
   color: #fff;
   font-size: 17px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   background: var(--e-global-color-accent, #698F65);
   display: block;
   padding: 20px 40px;
-  border-radius: 10px;
+  border-radius: 30px;
   line-height: normal;
 }
 @media (max-width: 519.98px) {
@@ -5953,7 +5953,7 @@ body {
   font-size: 17px;
   font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   background: var(--e-global-color-accent, #698F65);
   width: 100%;
@@ -6084,7 +6084,7 @@ body {
   color: #fff;
   font-size: 17px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   background: var(--e-global-color-accent, #698F65);
   display: block;
@@ -6467,7 +6467,7 @@ body {
 .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .added_to_cart {
   width: 100%;
   padding: 16px 10px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   white-space: nowrap;
   opacity: 0;
@@ -6879,7 +6879,7 @@ body {
 .woocommerce .bt-main-product-ss div.product div.summary form.cart .button {
   float: none;
   display: block;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .woocommerce .bt-main-product-ss div.product div.summary form.cart .variations {
   margin-top: 0;
@@ -7126,7 +7126,7 @@ body {
   margin: 0;
 }
 .woocommerce .bt-main-product-ss div.product .woocommerce-tabs #tab-reviews #respond .form-submit input {
-  text-transform: uppercase;
+  text-transform: capitalize;
   min-width: 180px;
 }
 .woocommerce .bt-main-product-ss div.product .woocommerce-tabs #tab-reviews .comment-form {
@@ -7442,7 +7442,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 10px 25px;
   color: #ffffff;
   background: var(--e-global-color-accent, #698F65);
@@ -7582,7 +7582,7 @@ body {
   font-size: 17px;
   font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #ffffff;
   background: var(--e-global-color-accent, #698F65);
   padding: 20px 20px;
@@ -7849,7 +7849,7 @@ body {
 .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order #place_order {
   font-size: 17px;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #ffffff;
   background: var(--e-global-color-accent, #698F65);
   margin-top: 15px;
@@ -7959,7 +7959,7 @@ body {
 .woocommerce-account .woocommerce form.login .button {
   font-size: 16px;
   line-height: 24px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 15px 35px;
   color: #ffffff;
   background: var(--e-global-color-accent, #698F65);
@@ -8364,7 +8364,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
   word-break: break-word;
   display: flex;
   justify-content: center;
@@ -9803,7 +9803,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 18px 54px;
   background: var(--e-global-color-accent, #698F65);
   display: inline-block;
@@ -9959,7 +9959,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 20px 30px;
   background: var(--e-global-color-accent, #698F65);
   display: block;
@@ -10172,7 +10172,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 14px 35px;
   border-radius: 10px 10px 25px 10px;
 }
