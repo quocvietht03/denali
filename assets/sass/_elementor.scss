@@ -1051,7 +1051,6 @@
     .bt-post {
       background: $color-accent;
       padding: 61px 40px 62px 40px;
-      border-radius: 20px 20px 50px 20px;
       &::before {
         content: "";
         position: absolute;
@@ -1063,7 +1062,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 20px 20px 50px 20px;
       }
       &--rating {
         display: flex;

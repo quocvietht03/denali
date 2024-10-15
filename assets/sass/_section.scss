@@ -880,6 +880,9 @@ body {
         }
     }
     &.bt-loop-testimonial-home3 {
+        > .elementor-widget-container{
+            overflow: hidden;
+        }
         .elementor-swiper-button {
             width: 60px;
             height: 60px;
