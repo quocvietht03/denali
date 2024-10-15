@@ -1057,6 +1057,9 @@
     align-items: center;
     position: relative;
     padding-left: 30px;
+    > *{
+      cursor: pointer;
+    }
     input {
       margin: 0;
       width: 20px;
