@@ -275,14 +275,14 @@
   display: inline-block;
   font-size: 17px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: normal;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
   background: $color-accent;
-  padding: 16px 40px;
+  padding: 20px 40px;
   border: none;
-  border-radius: 0;
+  border-radius: 30px;
   font-family: $primary-font;
   height: auto;
   min-height: auto;
@@ -1138,6 +1138,7 @@
         line-height: 30px;
         max-width: 602px;
         color: $color-text;
+        margin: 0 auto;
         @media (max-width: $break-xs) {
           font-size: 18px;
         }
@@ -1175,7 +1176,7 @@
       input[type="submit"] {
         padding: 20px 40px !important;
         width: 100% !important;
-        border-radius: 10px !important;
+        border-radius: 30px !important;
       }
     }
   }

@@ -1508,6 +1508,13 @@ body {
             }
         }
     }
+    &.bt-section-product-home5{
+        .bt-elwg-product-loop-item{
+            .woocommerce-loop-product__infor{
+                background: #fff;
+            }
+        }
+    }
     &.bt-section-appointment-home5 {
         @extend .__bt-form-appointment-style;
         .gform_wrapper {
