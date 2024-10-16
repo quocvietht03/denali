@@ -233,14 +233,12 @@
     }
   }
 }
-.elementor-element {
-  &.bt-footer-sticky {
+body.bt-sticky-footer{
+  [data-elementor-type="footer"]{
     position: sticky;
     z-index: 1;
     bottom: 0;
   }
-}
-body.bt-sticky-footer{
   [data-elementor-type="wp-page"],main,.bt-site-titlebar{
     position: relative;
     z-index: 2;

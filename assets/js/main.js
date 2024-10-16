@@ -217,7 +217,7 @@
 		$('.bt-col-container-right').css('--width-body', widthBody + 'px');
 	}
 	function DenaliCheckFooterSticky() {
-		if ($('.elementor-location-footer .bt-footer-sticky').hasClass('elementor-sticky')) {
+		if ($('.elementor-location-footer > .elementor-element').hasClass('bt-footer-sticky')) {
 			$('body').addClass('bt-sticky-footer'); 
 		} else {
 			$('body').removeClass('bt-sticky-footer'); 
@@ -271,15 +271,13 @@
 		DenaliCheckboxCustom();
 		DenaliBorderTop();
 		DenaliUpdateBodyWidthVariable();
+		DenaliCheckFooterSticky();
 	});
 
 	jQuery(window).on('resize', function () {
 		DenaliSubmenuAuto();
 		DenaliBorderTop();
 		DenaliUpdateBodyWidthVariable();
-	});
-	jQuery(window).on('load', function () {
-		DenaliCheckFooterSticky();
 	});
 	jQuery(window).on('scroll', function () {
 
