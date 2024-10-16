@@ -244,9 +244,7 @@ body {
                 .tnp-privacy-field {
                     label {
                         color: #fff;
-                        > *{
-                            cursor: pointer;
-                        }
+                        cursor: pointer;
                         .checkmark {
                             border: none;
                         }
@@ -806,9 +804,9 @@ body {
             }
         }
         @extend .__bt-form-appointment-style;
-        .gform_wrapper{
-            .gform_heading{
-                .gform_description{
+        .gform_wrapper {
+            .gform_heading {
+                .gform_description {
                     margin: 0 auto;
                 }
             }
@@ -883,7 +881,7 @@ body {
         }
     }
     &.bt-loop-testimonial-home3 {
-        > .elementor-widget-container{
+        > .elementor-widget-container {
             overflow: hidden;
         }
         .elementor-swiper-button {
@@ -1512,9 +1510,9 @@ body {
             }
         }
     }
-    &.bt-section-product-home5{
-        .bt-elwg-product-loop-item{
-            .woocommerce-loop-product__infor{
+    &.bt-section-product-home5 {
+        .bt-elwg-product-loop-item {
+            .woocommerce-loop-product__infor {
                 background: #fff;
             }
         }
@@ -1813,14 +1811,14 @@ body {
                 }
                 &:last-child {
                     @media (max-width: 1300px) and (min-width: 1125.25px) {
-                        > .elementor-element{
-                            &:last-child{
-                                > .e-con-inner{
+                        > .elementor-element {
+                            &:last-child {
+                                > .e-con-inner {
                                     gap: 15px;
-                                    .elementor-button{
+                                    .elementor-button {
                                         padding: 20px 24px 20px 23px;
                                     }
-                                    .bt-site-box-phone--infor .bt-phone{
+                                    .bt-site-box-phone--infor .bt-phone {
                                         font-size: 22px;
                                     }
                                 }
