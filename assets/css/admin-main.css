@@ -406,7 +406,7 @@ html :where(.editor-styles-wrapper) {
 
 .__bt-button-style, .__bt-button-outline-dark-style, .__bt-button-outline-style, .__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .widget button, .widget input[type=submit] {
   display: inline-block;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
@@ -1059,7 +1059,7 @@ html :where(.editor-styles-wrapper) {
 }
 .__make-appointment-style .bt-make-appointment--button, .bt-block-make-appointment .bt-make-appointment--button {
   color: #fff;
-  font-size: 17px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
