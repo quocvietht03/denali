@@ -233,15 +233,19 @@
     }
   }
 }
-body.bt-sticky-footer{
-  [data-elementor-type="footer"]{
-    position: sticky;
-    z-index: 1;
-    bottom: 0;
-  }
-  [data-elementor-type="wp-page"],main,.bt-site-titlebar{
-    position: relative;
-    z-index: 2;
-    background-color: #fff;
+body.bt-sticky-footer {
+  @media (min-width: $break-tl) {
+    [data-elementor-type="footer"] {
+      position: sticky;
+      z-index: 1;
+      bottom: 0;
+    }
+    [data-elementor-type="wp-page"],
+    main,
+    .bt-site-titlebar {
+      position: relative;
+      z-index: 2;
+      background-color: #fff;
+    }
   }
 }

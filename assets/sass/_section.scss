@@ -244,6 +244,9 @@ body {
                 .tnp-privacy-field {
                     label {
                         color: #fff;
+                        > *{
+                            cursor: pointer;
+                        }
                         .checkmark {
                             border: none;
                         }
