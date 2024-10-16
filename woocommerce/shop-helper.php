@@ -246,3 +246,17 @@ function denali_woocommerce_custom_reviews_tab_title($tabs)
   }
   return $tabs;
 }
+/* auto update mini cart */
+add_filter('woocommerce_add_to_cart_fragments', 'woocommerce_icon_add_to_cart_fragment');
+if (!function_exists('woocommerce_icon_add_to_cart_fragment')) {
+	function woocommerce_icon_add_to_cart_fragment($fragments)
+	{
+		global $woocommerce;
+		ob_start();
+?>
+		<span class="cart_total"><?php echo esc_html($woocommerce->cart->cart_contents_count); ?></span>
+<?php
+		$fragments['span.cart_total'] = ob_get_clean();
+		return $fragments;
+	}
+}

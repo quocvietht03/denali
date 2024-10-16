@@ -80,7 +80,8 @@ class ElementorWidgets
 			'service-loop-item',
 			'page-title-bar',
 			'site-box-phone',
-			'location-list'
+			'location-list',
+			'mini-cart'
 		);
 
 		return $this->widgets;
@@ -209,6 +210,7 @@ class ElementorWidgets
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\SiteBoxPhone\Widget_SiteBoxPhone());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PageTitleBar\Widget_PageTitleBar());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\LocationList\Widget_LocationList());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\MiniCart\Widget_MiniCart());
 	}
 
 	/**
