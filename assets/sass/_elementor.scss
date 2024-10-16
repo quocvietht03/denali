@@ -1548,6 +1548,9 @@
           max-width: 100%;
           transform: translateX(-50%) rotate(315deg);
           z-index: 1;
+          @media (max-width: $break-tl) {
+            transform: translateX(-50%) rotate(0);
+          }
           &:before {
             opacity: 0;
             transition: none;
@@ -1559,6 +1562,10 @@
           margin: 0 auto;
           border-radius: 20px;
           overflow: hidden;
+          @media (max-width: $break-tl) {
+            max-width: 100%;
+            transform: rotate(0);
+          }
           &:hover {
             .bt-cover-image {
               &::before{
