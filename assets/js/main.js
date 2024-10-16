@@ -211,11 +211,20 @@
 		}
 	};
 	/* Get width body */
-	function updateBodyWidthVariable() {
+	function DenaliUpdateBodyWidthVariable() {
 		var widthBody = $(window).width();
 		$('.bt-col-container-left').css('--width-body', widthBody + 'px');
 		$('.bt-col-container-right').css('--width-body', widthBody + 'px');
 	}
+	function DenaliCheckFooterSticky() {
+		if ($('.elementor-location-footer .bt-footer-sticky').hasClass('elementor-sticky')) {
+			$('body').addClass('bt-sticky-footer'); 
+		} else {
+			$('body').removeClass('bt-sticky-footer'); 
+		}
+		
+	}
+
 	function Denali_GF_Select2() {
 		$('.gform_wrapper').each(function() {
 			const $self = $(this);
@@ -261,15 +270,17 @@
 		DenaliUnitsCustom();
 		DenaliCheckboxCustom();
 		DenaliBorderTop();
-		updateBodyWidthVariable();
+		DenaliUpdateBodyWidthVariable();
 	});
 
 	jQuery(window).on('resize', function () {
 		DenaliSubmenuAuto();
 		DenaliBorderTop();
-		updateBodyWidthVariable();
+		DenaliUpdateBodyWidthVariable();
 	});
-
+	jQuery(window).on('load', function () {
+		DenaliCheckFooterSticky();
+	});
 	jQuery(window).on('scroll', function () {
 
 	});

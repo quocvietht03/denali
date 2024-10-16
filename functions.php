@@ -171,12 +171,13 @@ if (function_exists('get_field')) {
 
 /* Custom number posts per page */
 add_action('pre_get_posts', 'bt_custom_posts_per_page');
-function bt_custom_posts_per_page($query) {
-	if ( $query->is_post_type_archive( 'service' ) && $query->is_main_query() && ! is_admin() ) {
-		$query->set( 'posts_per_page', 12 );
+function bt_custom_posts_per_page($query)
+{
+	if ($query->is_post_type_archive('service') && $query->is_main_query() && ! is_admin()) {
+		$query->set('posts_per_page', 12);
 	}
 
-	if ( $query->is_post_type_archive( 'therapist' ) && $query->is_main_query() && ! is_admin() ) {
-		$query->set( 'posts_per_page', 12 );
+	if ($query->is_post_type_archive('therapist') && $query->is_main_query() && ! is_admin()) {
+		$query->set('posts_per_page', 12);
 	}
 };
