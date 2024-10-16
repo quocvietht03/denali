@@ -1834,4 +1834,16 @@ body {
             }
         }
     }
+    &.bt-section-featured{
+        > .elementor-element{
+            @media(max-width:$break-sm){
+                &:nth-child(3){
+                    background-color: #fff !important;
+                }
+                &:nth-child(4){
+                    background-color: #F4F8F7 !important;
+                }
+            }
+        }
+    }
 }
