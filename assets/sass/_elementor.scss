@@ -1550,6 +1550,7 @@
           z-index: 1;
           &:before {
             opacity: 0;
+            transition: none;
           }
         }
         &--inner {
@@ -1561,10 +1562,7 @@
           &:hover {
             .bt-cover-image {
               &::before{
-                transform: scale(0);
-              }
-              &::after {
-                transform: scale(1);
+                background: rgb(105 143 101 / 87%);
               }
             }
           }
@@ -1583,22 +1581,8 @@
               background: rgba(0, 0, 0, 0.5);
               z-index: 1;
               content: "";
-              transform: scale(1);
-              transition: 0.5s all;
               border-radius: 20px;
-            }
-            &::after {
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              background: rgb(105 143 101 / 87%);
-              z-index: 1;
-              content: "";
-              transform: scale(0);
-              transition: 0.5s all;
-              border-radius: 20px;
+              transition: none;
             }
             img {
               transform: scale(1.4) rotate(-45deg);
