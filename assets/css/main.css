@@ -2412,7 +2412,7 @@ img.alignright {
   padding-right: 0 !important;
 }
 @media (max-width: 1310px) and (min-width: 1024.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-1 > .e-con-inner > .elementor-element:last-child .elementor-widget-woocommerce-menu-cart > .elementor-widget-container {
+  .elementor-location-header .elementor-element.bt-header-nav-style-1 > .e-con-inner > .elementor-element:last-child .bt-mini-cart-site > .elementor-widget-container {
     margin: 0px 20px 0px 15px;
   }
   .elementor-location-header .elementor-element.bt-header-nav-style-1 > .e-con-inner > .elementor-element:last-child .elementor-widget-nav-menu > .elementor-widget-container {
@@ -2558,7 +2558,7 @@ img.alignright {
   .elementor-location-header .elementor-element.bt-header-nav-style3 > .e-con-inner > .elementor-element > .elementor-element:last-child {
     padding-right: 15px;
   }
-  .elementor-location-header .elementor-element.bt-header-nav-style3 > .e-con-inner > .elementor-element > .elementor-element:last-child .elementor-widget-woocommerce-menu-cart > .elementor-widget-container {
+  .elementor-location-header .elementor-element.bt-header-nav-style3 > .e-con-inner > .elementor-element > .elementor-element:last-child .bt-mini-cart-site > .elementor-widget-container {
     margin: 0px 10px 0px 0;
   }
   .elementor-location-header .elementor-element.bt-header-nav-style3 > .e-con-inner > .elementor-element > .elementor-element:last-child .elementor-widget-nav-menu > .elementor-widget-container {
@@ -2606,7 +2606,7 @@ img.alignright {
   margin-left: 10px;
 }
 @media (max-width: 1360px) and (min-width: 1024.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-4 > .e-con-inner > .elementor-element:last-child .elementor-widget-woocommerce-menu-cart > .elementor-widget-container {
+  .elementor-location-header .elementor-element.bt-header-nav-style-4 > .e-con-inner > .elementor-element:last-child .bt-mini-cart-site > .elementor-widget-container {
     margin: 0px 20px 0px 15px;
   }
   .elementor-location-header .elementor-element.bt-header-nav-style-4 > .e-con-inner > .elementor-element:last-child .elementor-widget-nav-menu > .elementor-widget-container {
@@ -2620,7 +2620,7 @@ img.alignright {
   }
 }
 @media (max-width: 1260px) and (min-width: 1024.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-4 > .e-con-inner > .elementor-element:last-child .elementor-widget-woocommerce-menu-cart > .elementor-widget-container {
+  .elementor-location-header .elementor-element.bt-header-nav-style-4 > .e-con-inner > .elementor-element:last-child .bt-mini-cart-site > .elementor-widget-container {
     margin: 0px 10px 0px 10px;
   }
   .elementor-location-header .elementor-element.bt-header-nav-style-4 > .e-con-inner > .elementor-element:last-child .elementor-widget-nav-menu > .elementor-widget-container {
@@ -2682,7 +2682,7 @@ img.alignright {
   margin-left: 10px;
 }
 @media (max-width: 1380px) and (min-width: 1024.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-5 > .elementor-element > .elementor-element:last-child .elementor-widget-woocommerce-menu-cart > .elementor-widget-container {
+  .elementor-location-header .elementor-element.bt-header-nav-style-5 > .elementor-element > .elementor-element:last-child .bt-mini-cart-site > .elementor-widget-container {
     margin: 0px 20px 0px 15px;
   }
   .elementor-location-header .elementor-element.bt-header-nav-style-5 > .elementor-element > .elementor-element:last-child .elementor-widget-nav-menu > .elementor-widget-container {
@@ -2696,7 +2696,7 @@ img.alignright {
   }
 }
 @media (max-width: 1265px) and (min-width: 1024.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-5 > .elementor-element > .elementor-element:last-child .elementor-widget-woocommerce-menu-cart > .elementor-widget-container {
+  .elementor-location-header .elementor-element.bt-header-nav-style-5 > .elementor-element > .elementor-element:last-child .bt-mini-cart-site > .elementor-widget-container {
     margin: 0px 10px 0px 10px;
   }
   .elementor-location-header .elementor-element.bt-header-nav-style-5 > .elementor-element > .elementor-element:last-child .elementor-widget-nav-menu > .elementor-widget-container {
