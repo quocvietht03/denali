@@ -893,15 +893,17 @@ body {
             justify-content: center;
             align-items: center;
             @media (max-width: $break-sm) {
+                width: 48px;
+                height: 48px;
                 &.elementor-swiper-button-prev {
-                    left: 40% !important;
+                    left: 42% !important;
                     transform: translate(-60%, -95%) !important;
-                    top: 95% !important;
+                    top: 90% !important;
                 }
                 &.elementor-swiper-button-next {
-                    right: 40% !important;
+                    right: 42% !important;
                     transform: translate(60%, -95%) !important;
-                    top: 95% !important;
+                    top: 90% !important;
                 }
             }
         }
@@ -1422,12 +1424,14 @@ body {
                     }
                 }
                 @media (max-width: $break-xs) {
+                    width: 48px;
+                    height: 48px;
                     &.elementor-swiper-button-prev {
-                        left: 40%;
+                        left: 42%;
                         transform: translate(-60%, -50%);
                     }
                     &.elementor-swiper-button-next {
-                        right: 40%;
+                        right: 42%;
                         transform: translate(60%, -50%);
                     }
                 }

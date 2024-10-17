@@ -224,7 +224,25 @@
 		}
 		
 	}
-
+	function DenaliUpdateMiniCart() {
+		if (typeof wc_cart_fragments_params !== 'undefined') {
+			$('form.woocommerce-cart-form').on('submit', function(event) {
+				setTimeout(function() {
+					$.ajax({
+						url: wc_cart_fragments_params.wc_ajax_url.toString().replace('%%endpoint%%', 'get_refreshed_fragments'),
+						type: 'POST',
+						success: function(response) {
+							if (response && response.fragments) {
+								$.each(response.fragments, function(key, value) {
+									$(key).replaceWith(value);
+								});
+							}
+						}
+					});
+				}, 1000);
+			});
+		}
+	}
 	function Denali_GF_Select2() {
 		$('.gform_wrapper').each(function() {
 			const $self = $(this);
@@ -272,6 +290,7 @@
 		DenaliBorderTop();
 		DenaliUpdateBodyWidthVariable();
 		DenaliCheckFooterSticky();
+		DenaliUpdateMiniCart();
 	});
 
 	jQuery(window).on('resize', function () {

@@ -52,7 +52,9 @@ if (!function_exists('denali_enqueue_scripts')) {
 
 			wp_enqueue_script('zoom-master', get_template_directory_uri() . '/assets/libs/zoom-master/jquery.zoom.min.js', array('jquery'), '', true);
 		}
-
+		if (class_exists('WooCommerce')) {
+			wp_enqueue_script('wc-cart-fragments');
+		}
 		wp_enqueue_script('select2', get_template_directory_uri() . '/assets/libs/select2/select2.min.js', array('jquery'), '', true);
 		wp_enqueue_style('select2', get_template_directory_uri() . '/assets/libs/select2/select2.min.css', array(), false);
 
