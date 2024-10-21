@@ -452,7 +452,7 @@ class Widget_PopularServicesStyle1 extends Widget_Base
 		$query = $this->query_posts();
 
 ?>
-		<div class="bt-elwg-service-popular--style1 layout-<?php echo $settings['layout_service']; ?>">
+		<div class="bt-elwg-service-popular--style1 layout-<?php echo esc_attr($settings['layout_service']); ?>">
 			<?php
 			if ($query->have_posts()) {
 			?>
